@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="48" viewBox="0 0 96 48">
+  <g id="Group_1" data-name="Group 1" transform="translate(-475 -1120)">
+    <g id="basket" transform="translate(523 1120)">
+      <g id="Group_1-2" data-name="Group 1">
+        <path id="Path_1" data-name="Path 1" d="M0,0H24V24H0Z" fill="none" fill-rule="evenodd"/>
+        <path id="Path_2" data-name="Path 2" d="M5.333,1,2,5.4V20.8A2.211,2.211,0,0,0,4.222,23H19.778A2.211,2.211,0,0,0,22,20.8V5.4L18.667,1ZM2,6H22m-6,5a4,4,0,0,1-8,0" fill="none" stroke="#1f2d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+      </g>
+    </g>
+    <g id="basket-filled" transform="translate(523 1144)">
+      <g id="Group_2" data-name="Group 2">
+        <path id="Path_3" data-name="Path 3" d="M0,0H24V24H0Z" fill="none" fill-rule="evenodd"/>
+        <path id="Path_4" data-name="Path 4" d="M5.333,1,2,5.4V20.8A2.211,2.211,0,0,0,4.222,23H19.778A2.211,2.211,0,0,0,22,20.8V5.4L18.667,1Z" fill="#c0ccda" stroke="#1f2d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+        <path id="Path_5" data-name="Path 5" d="M2,6H22m-6,5a4,4,0,0,1-8,0" fill="none" stroke="#1f2d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+      </g>
+    </g>
+    <g id="heart" transform="translate(499 1120)">
+      <g id="Group_3" data-name="Group 3">
+        <path id="Path_6" data-name="Path 6" d="M0,0H24V24H0Z" fill="none" fill-rule="evenodd"/>
+        <path id="Path_7" data-name="Path 7" d="M21.3,3.768a5.625,5.625,0,0,0-8.189,0L12,4.931,10.884,3.768a5.625,5.625,0,0,0-8.188,0,6.218,6.218,0,0,0,0,8.535l1.115,1.162,6.746,7.03a2,2,0,0,0,2.886,0l6.745-7.03L21.3,12.3a6.217,6.217,0,0,0,0-8.535Z" fill="none" stroke="#1f2d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+      </g>
+    </g>
+    <g id="heart-filled" transform="translate(553 1101)">
+      <g id="Group_4" data-name="Group 4" transform="translate(-54 43)">
+        <path id="Path_8" data-name="Path 8" d="M0,0H24V24H0Z" fill="none" fill-rule="evenodd"/>
+        <path id="Path_9" data-name="Path 9" d="M21.3,3.768a5.625,5.625,0,0,0-8.189,0L12,4.931,10.884,3.768a5.625,5.625,0,0,0-8.188,0,6.218,6.218,0,0,0,0,8.535l1.115,1.162,6.746,7.03a2,2,0,0,0,2.886,0l6.745-7.03L21.3,12.3a6.217,6.217,0,0,0,0-8.535Z" fill="#fcebf1" stroke="#1f2d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+      </g>
+    </g>
+    <g id="location" transform="translate(475 1120)">
+      <g id="Group_5" data-name="Group 5">
+        <path id="Path_10" data-name="Path 10" d="M0,0H24V24H0Z" fill="none" fill-rule="evenodd"/>
+        <path id="Path_11" data-name="Path 11" d="M12,23c.727,0,9-6.925,9-13s-4.582-9-9-9S3,3.925,3,10,11.273,23,12,23Z" fill="none" stroke="#1f2d3d" stroke-width="2" fill-rule="evenodd"/>
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="3" cy="3" r="3" transform="translate(9 7)" fill="none" stroke="#1f2d3d" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="location-filled" transform="translate(475 1144)">
+      <g id="Group_6" data-name="Group 6">
+        <path id="Path_12" data-name="Path 12" d="M0,0H24V24H0Z" fill="none" fill-rule="evenodd"/>
+        <path id="Path_13" data-name="Path 13" d="M12,23c.727,0,9-6.925,9-13s-4.582-9-9-9S3,3.925,3,10,11.273,23,12,23Z" fill="#fffae5" stroke="#1f2d3d" stroke-width="2" fill-rule="evenodd"/>
+        <circle id="Ellipse_2" data-name="Ellipse 2" cx="3" cy="3" r="3" transform="translate(9 7)" fill="none" stroke="#1f2d3d" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="hamburger" transform="translate(547 1120)">
+      <path id="Path_1-2" data-name="Path 1" d="M0,0H24V24H0Z" fill="rgba(255,255,255,0)" fill-rule="evenodd"/>
+      <path id="Path_2-2" data-name="Path 2" d="M1,12H23M1,4H23M1,20H23" fill="none" stroke="#1f2d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+    </g>
+    <g id="search" transform="translate(547 1144)">
+      <path id="Path_3-2" data-name="Path 3" d="M0,0H24V24H0Z" fill="rgba(255,255,255,0)" fill-rule="evenodd"/>
+      <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="9" cy="9" r="9" transform="translate(1 1)" fill="none" stroke="#1f2d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_4-2" data-name="Path 4" d="M22,22l-5-5" fill="none" stroke="#1f2d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
