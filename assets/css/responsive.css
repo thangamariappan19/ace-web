@@ -36,7 +36,7 @@
 
   .section-header .logo {
     max-height: 40px;
-    width: auto;
+    width: auto !important;
   }
   .section-header .header-main .brand-wrap {
     margin-bottom: 1rem;
@@ -173,11 +173,45 @@ font-size: 12px;
 {
   padding: 6px 0px 2px 0px;
 }
+header .nav-icon-right .nav-item
+{
+  display: block;
+}
+header .nav-icon-right
+{
+  justify-content: flex-end;
+}
 
+
+.nav-icon-right span
+{
+ display: none;
+}
 
 }
 @media (min-width: 768px) and (max-width: 990px)
 {
+  header .nav-icon-right .nav-item
+  {
+    display: block;
+  }
+  header .nav-icon-right
+  {
+    justify-content: flex-end;
+  }
+  .nav-icon-right span
+  {
+   display: none;
+  }
+  .section-header  .logo 
+  {
+    /* width: 35%; */
+  }
+  header .toggle
+  {
+    margin-top: 0;
+  }
+
   .logo-order 
   {
     order: 1;
@@ -243,6 +277,35 @@ background-color: transparent;
 }
 @media (min-width: 577px) and (max-width: 767px)
 {
+
+  header .nav-icon-right .nav-item
+  {
+    display: block;
+  }
+  header .nav-icon-right
+  {
+    justify-content: flex-end;
+  }
+  header .nav-icon-right .nav-item
+  {
+    margin-right: 10px;
+  }
+  .header-main
+  {
+    margin-top: 0px;
+  }
+  .search-wrap 
+  {
+    margin-top: 10px;
+  }
+  header .toggle
+  {
+    margin-top: 0;
+  }
+  .nav-icon-right span
+  {
+   display: none;
+  }
   .right-icons-order 
   {
     order: 1;
@@ -271,9 +334,64 @@ background-color: transparent;
 @media only screen and (max-width: 576px) 
 
 
-
-
 {
+  header .nav-icon-right .nav-item
+  {
+    /* display: contents; */
+  }
+  .header-main
+  {
+    margin-top: 10px;
+  }
+  header .nav-icon-right
+  {
+    justify-content: flex-end;
+  }
+  header .nav-icon-right .nav-item {
+    margin-right: 0px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -15px;
+  background-color: #e31836;
+  color: #ffffff;
+  padding: 2px 6px 2px 6px;
+  font-size: 10px;
+  right: -1px;
+  border-radius: 5px;
+}
+header .nav-icon-right .mt5
+{
+  margin-top: 0px;
+}
+.nav-icon-right .fa-shopping-cart
+{
+  font-size: 22px;
+}
+.c-ico {
+  background: transparent;
+  /* width: 40px; */
+  /* height: 30px; */
+  margin-right: 6px !important;
+  padding: 0px;
+  /* line-height: 30px; */
+}
+  .nav-icon-right span
+  {
+   display: none;
+  }
+  .search-wrap {
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+  header .toggle
+{
+  margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left: -15px;
+}
+
   .offer-tag {
     position: absolute;
     right: 0;

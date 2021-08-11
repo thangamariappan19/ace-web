@@ -3545,11 +3545,37 @@ header {
   line-height: inherit;
   white-space: nowrap;
 }
-header .nav-icon-right {
+/* header .nav-icon-right {
   justify-content: space-between;
   width: 291px;
   padding: 0;
+  
+} */
+header .nav-icon-right {
+  justify-content: flex-end;  /* width: 291px; */
+  padding: 0;
 }
+header .nav-icon-right .mt5
+{
+  margin-top: 5px;
+}
+
+header .nav-icon-right .nav-item 
+{
+  margin-right: 30px;
+}
+.cart-badge 
+{
+  position: absolute;
+    top: -10px;
+    background-color: #e31836;
+    color: #fff;
+    padding: 2px 6px 2px 6px;
+    font-size: 13px;
+    right: -1px;
+    border-radius: 5px;
+}
+
 header .nav-icon-right .nav-item .stores {
   background-position: 0 0;
 }
@@ -3652,15 +3678,19 @@ header .nav-icon-right .nav-item .wishlist {
 }
 .c-ico {
   background: #eeeeee;
-  width: 30px;
-  height: 27px;
+    /* width: 40px; */
+    /* height: 30px; */
+    margin-right: 6px !important;
+    padding: 10px 20px 10px 9px;
+    /* line-height: 30px;*/
 }
 
 .c-ico i {
-  font-size: 22px;
-  color: #9a9696;
-  margin-left: 5px;
-  margin-top: 3px;
+  font-size: 20px;
+    color: #9a9696;
+    margin-left: 5px;
+    /* margin-top: 2px; */
+    text-align: center;
 }
 .modal-dialog {
   max-width: 800px !important;
