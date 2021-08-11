@@ -2343,19 +2343,6 @@ font-size: 16px;
 margin-top: 0px;
 margin-bottom: 20px;
 }
-@media screen 
-and (min-device-width: 1200px) 
-and (max-device-width: 1600px) 
-and (-webkit-min-device-pixel-ratio: 1) { 
-  .by-category-main 
-{
-padding: 10px;
-box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
-transition: 1s;
-margin-bottom: 20px;
-width: 13em;
-}
-}
 .by-category-main 
 {
 padding: 10px;
