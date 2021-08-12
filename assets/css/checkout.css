@@ -461,7 +461,7 @@ p:last-child {
 .navbar-brand .logo {
   margin-right: 7px;
   /* max-height: 42px; */
-  width: 50%;
+  width: 200px;
   display: inline-block;
 }
 
