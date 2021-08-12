@@ -2,12 +2,13 @@
 /********** General CSS ***********/
 /**********************************/
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
 
 body {
   color: #353535;
   /* font-family: "Roboto Slab Serif"; */
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 400;
   background: #fff;
   overflow-x: hidden;
@@ -26,25 +27,28 @@ a:focus {
 }
 
 h1 {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
 
   font-weight: 900;
 }
 
 h4 {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
+
 }
 
 h3 {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
+
 }
 
 h5 {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
+
 }
 
 h2 {
-  font-family: "Roboto Slab", serif;
+    font-family: 'Roboto Slab', serif;
 
   font-weight: 700;
 }
@@ -692,11 +696,11 @@ h2 {
 }
 
 .breadcrumb-wrap .breadcrumb {
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  font-size: 14px;
-  margin-left: 16px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-size: 14px;
+    margin-left: 16px;
 }
 
 /**********************************/
@@ -1289,7 +1293,24 @@ h2 {
 .product-detail .product-content .action a:first-child {
   margin-right: 11px;
 }
+.product-detail .nav.nav-pills .nav-link {
+  color: #000;
+  border-radius: 0;
+  transition: all 0.3s;
+  width: 200px;
+}
 
+.product-detail .nav.nav-pills .nav-link:hover,
+.product-detail .nav.nav-pills .nav-link.active {
+  background: #fff;
+  border: 1px solid #d40029;
+  color: red;
+}
+
+.product-detail .tab-content {
+  background: #ffffff;
+  padding: 25px 15px 15px 15px;
+}
 .product-detail .product-content .action a i {
   margin-right: 5px;
 }
@@ -1913,22 +1934,6 @@ h2 {
   border-radius: 4px;
   transition: all 0.3s;
 }
-
-.checkout .checkout-payment .checkout-btn button:hover {
-  color: #d40029;
-  background: #000000;
-}
-
-/**********************************/
-/********* My Account CSS *********/
-/**********************************/
-.my-account {
-  position: relative;
-  padding: 30px 0;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
 .my-account .nav.nav-pills .nav-link {
   padding: 15px 14px;
   color: #353535;
@@ -1948,6 +1953,45 @@ h2 {
   color: #d40029 !important;
   background: #eff2f7;
   border-bottom: 1px solid #d40029;
+}
+
+.my-account .nav.nav-pills .nav-link i {
+  margin-right: 5px;
+}
+.checkout .checkout-payment .checkout-btn button:hover {
+  color: #d40029;
+  background: #000000;
+}
+
+/**********************************/
+/********* My Account CSS *********/
+/**********************************/
+.my-account {
+  position: relative;
+    padding: 30px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.my-account .nav.nav-pills .nav-link {
+  padding: 15px 14px;
+  color: #353535;
+  background: #ffffff;
+  border-radius: 0;
+  border-bottom: 1px solid #dddddd;
+  transition: all 0.3s;
+  margin-bottom: 0px;
+}
+
+.my-account .nav.nav-pills .nav-link:last-child {
+  border-bottom: none;
+}
+
+.my-account .nav.nav-pills .nav-link:hover,
+.my-account .nav.nav-pills .nav-link.active {
+  color: #d40029 !important;
+    background: #eff2f7;
+    border-bottom: 1px solid #d40029;
 }
 
 .my-account .nav.nav-pills .nav-link i {
@@ -2458,6 +2502,31 @@ h2 {
 .footer .payment-security img {
   height: 25px;
 }
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #d40029;
+}
+.product-category .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #d40029 !important;
+  border: 1px solid #af1616 !important;
+  background-color: #fff !important;
+  font-family: "sans-serif";
+}
+
+.product-category .nav-pills .nav-link,
+.nav-pills .show > .nav-link {
+  color: #000 !important;
+  border: 1px solid #000 !important;
+  width: 200px;
+}
+
+.product-category .nav-pills .nav-item {
+  width: 200px;
+}
+.product-category .nav-pills li {
+  margin-left: 15px;
+}
 
 /**********************************/
 /******** Footer Bottom CSS *******/
@@ -2517,9 +2586,9 @@ h2 {
 .dropdown-menu a:hover {
   color: #000;
 }
-.nav-item a {
+/* .nav-item a {
   color: #fff;
-}
+} */
 
 .header-slider-caption h1,
 h3 {
@@ -2551,15 +2620,12 @@ h3 {
 }
 
 .heading-color {
-  color: #d40029 !important;
-}
-
-input:checked span {
   color: #d40029;
 }
+
 .tab-pane h4 {
   font-weight: 500;
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .cart-btn button:first-child {
@@ -2869,6 +2935,7 @@ input:checked span {
   background-color: #eff2f7;
 }
 
+
 .service-image {
   float: left;
   color: #d40029;
@@ -2922,7 +2989,7 @@ input:checked span {
   text-align: center;
   color: #000;
   padding: 6px;
-  height: 80px;
+  height: 80px;;
   margin-bottom: 5px;
 }
 .icon-box .title {
@@ -2946,13 +3013,15 @@ input:checked span {
   padding: 38px;
 }
 
-.serv-image img {
+.serv-image img 
+{
   /* border: 4px solid #f5f5f5;
   padding: 10px;
   border-radius: 50%;
   width: 70px;
   background-color: white; */
 }
+
 
 .black-pattern p {
   color: #fff;
@@ -2962,11 +3031,11 @@ input:checked span {
 }
 .box-gray {
   background-color: #1d1c1c;
-  height: 210px;
+  height:210px;
 }
 .box-black {
   background-color: #000;
-  height: 200px;
+  height:200px;
 }
 .black-pattern .third-element {
   background: #1d1b1b;
@@ -3013,7 +3082,8 @@ input:checked span {
   border-radius: 25px;
   transition: 1s;
 }
-.category-box:hover {
+.category-box:hover
+{
   background-color: #eff2f7;
 }
 
@@ -3024,7 +3094,7 @@ input:checked span {
 
 section {
   margin-bottom: 30px;
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .product-detail-spec {
@@ -3057,10 +3127,10 @@ section {
 }
 .related-search {
   background: #d40029;
-  color: #fff;
-  padding: 10px;
-  font-size: 18px;
-  border-radius: 6px;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 6px;
 }
 
 .bottom-bar .search-box {
@@ -3120,7 +3190,7 @@ section {
 #footer .footer-top h4 {
   font-size: 17px;
   font-weight: bold;
-  color: #060606;
+  color:#060606;
   position: relative;
   padding-bottom: 12px;
   text-transform: uppercase;
@@ -3211,7 +3281,7 @@ section {
 .card-body .fa-star {
   /* color: #d40029; */
   color: #e6b037;
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .remove-img {
@@ -3232,12 +3302,14 @@ section {
   margin-bottom: 33px;
   border-radius: 0px;
   transition: 1s;
+  
 }
 
 .services-list .icon-box:hover {
   background-color: #eff2f7;
   border: 1px solid #d40029;
 }
+
 
 .services-list .icon {
   position: absolute;
@@ -3473,11 +3545,37 @@ header {
   line-height: inherit;
   white-space: nowrap;
 }
-header .nav-icon-right {
+/* header .nav-icon-right {
   justify-content: space-between;
   width: 291px;
   padding: 0;
+  
+} */
+header .nav-icon-right {
+  justify-content: flex-end;  /* width: 291px; */
+  padding: 0;
 }
+header .nav-icon-right .mt5
+{
+  margin-top: 5px;
+}
+
+header .nav-icon-right .nav-item 
+{
+  margin-right: 30px;
+}
+.cart-badge 
+{
+  position: absolute;
+    top: -10px;
+    background-color: #e31836;
+    color: #fff;
+    padding: 2px 6px 2px 6px;
+    font-size: 13px;
+    right: -1px;
+    border-radius: 5px;
+}
+
 header .nav-icon-right .nav-item .stores {
   background-position: 0 0;
 }
@@ -3580,15 +3678,19 @@ header .nav-icon-right .nav-item .wishlist {
 }
 .c-ico {
   background: #eeeeee;
-  width: 30px;
-  height: 27px;
+    /* width: 40px; */
+    /* height: 30px; */
+    margin-right: 6px !important;
+    padding: 10px 20px 10px 9px;
+    /* line-height: 30px;*/
 }
 
 .c-ico i {
-  font-size: 22px;
-  color: #9a9696;
-  margin-left: 5px;
-  margin-top: 3px;
+  font-size: 20px;
+    color: #9a9696;
+    margin-left: 5px;
+    /* margin-top: 2px; */
+    text-align: center;
 }
 .modal-dialog {
   max-width: 800px !important;
@@ -3711,7 +3813,7 @@ textarea {
   /* min-width: 400px;
   min-height: 200px; */
   padding: 2rem 2rem !important;
-
+  
   background-color: white;
 }
 .login-box a {
@@ -3792,6 +3894,7 @@ textarea {
   background-position: 400%;
   transform: scale(1.1);
 }
+
 input::placeholder {
   color: #d40029;
 }
@@ -3802,18 +3905,22 @@ input::placeholder {
 @media screen and (max-width: 776px) {
   .login-box {
     padding: 4rem 2rem !important;
-    right: unset !important; /* width: 50px !important;
+    right: unset !important;
+    /* width: 50px !important;
     max-width: 100px; */
   }
 }
+
 .forgot {
   float: right;
 }
+
 .checkbox-custom,
 .radio-custom {
   opacity: 0;
   position: absolute;
 }
+
 .checkbox-custom,
 .checkbox-custom-label,
 .radio-custom,
@@ -3823,10 +3930,12 @@ input::placeholder {
   margin: 0px;
   cursor: pointer;
 }
+
 .checkbox-custom-label,
 .radio-custom-label {
   position: relative;
 }
+
 .checkbox-custom + .checkbox-custom-label:before,
 .radio-custom + .radio-custom-label:before {
   background: #fff;
@@ -3839,24 +3948,29 @@ input::placeholder {
   margin-right: 8px;
   text-align: center;
 }
+
 .checkbox-custom:checked + .checkbox-custom-label:before {
   content: "\f00c";
   font-family: "FontAwesome";
   background: rebeccapurple;
   color: #fff;
 }
+
 .radio-custom + .radio-custom-label:before {
   border-radius: 50%;
 }
+
 .radio-custom:checked + .radio-custom-label:before {
   content: "\f00c";
   font-family: "FontAwesome";
   color: #009688;
 }
+
 .checkbox-custom:focus + .checkbox-custom-label,
 .radio-custom:focus + .radio-custom-label {
   outline: 1px solid #ddd; /* focus style */
 }
+
 .img-login {
   width: 58%;
   height: 343px;
@@ -3864,9 +3978,11 @@ input::placeholder {
   margin-left: 126px;
   margin-top: 48px;
 }
+
 .userAuth.ar .userAuth__contentWrapper {
   direction: rtl;
 }
+
 .userAuth__contentWrapper {
   /* padding: 15px; */
 }
@@ -3885,6 +4001,7 @@ input::placeholder {
   margin-left: 25px;
   color: #d40029;
 }
+
 .userAuth__btn {
   padding: 0;
   border: 0;
@@ -3962,6 +4079,7 @@ input::placeholder {
   margin-right: 0;
   margin-left: 10px;
 }
+
 .userAuth__icon--fb {
   background: url(//a.namshicdn.com/login/assets/fb.svg) no-repeat;
   height: 24px;
@@ -3978,10 +4096,13 @@ input::placeholder {
   width: 24px;
   margin-right: 10px;
 }
+
 .modal-content .form {
   padding: 31px;
 }
-/* heart icon */
+
+/*
+heart icon */
 .site-header__icon {
   stroke: #d40029;
   fill: none;
@@ -3989,6 +4110,7 @@ input::placeholder {
   height: 25px;
   float: left;
 }
+
 .site-header__account,
 .site-header__cart,
 .site-header__wishlist {
@@ -4006,12 +4128,14 @@ input::placeholder {
   color: #9c9a9a;
 }
 /* end */
+
 .language-switcher {
   background: #fff;
   height: 2rem;
   text-align: center;
   font-size: 13px;
 }
+
 .language-switcher .nav .nav-item .nav-link {
   padding: 0.27rem 0.5rem;
   max-width: 200px;
@@ -4019,6 +4143,7 @@ input::placeholder {
 .language-switcher .nav .nav-item .nav-link b {
   color: #004ba0;
 }
+
 .language-switcher .nav .nav-item .nav-link {
   padding: 0.27rem 0.5rem;
   max-width: 200px;
@@ -4034,6 +4159,7 @@ input::placeholder {
   -moz-box-pack: center;
   justify-content: center;
 }
+
 /* I wanted to go with a mobile first approach, but it actually lead to more verbose CSS in this case, so I've gone web first. Can't always force things... Side note: I know that this style of nesting in SASS doesn't result in the most performance efficient CSS code... but on the OCD/organizational side, I like it. So for CodePen purposes, CSS selector performance be damned. */
 /* Global settings */
 /* Global "table" column settings */
@@ -4045,27 +4171,33 @@ input::placeholder {
   -webkit-transform: rotate(90deg); /* Safari and Chrome */
   -o-transform: rotate(90deg); /* Opera */
 }
+
 #vert {
   height: auto;
   min-width: auto;
 }
+
 .product-removal input {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: center;
+
   cursor: pointer;
   height: 50px;
   min-width: 100px;
   position: relative;
+
   border: 1px solid #c54237;
   border-radius: 21px;
   padding: 0 10px;
+
   font-size: 20px;
   background-color: #c54237;
   color: #fff;
 }
+
 .product-removal input:hover {
   box-shadow: 0px 0px 4px #fff;
 }
@@ -4077,8 +4209,8 @@ input::placeholder {
   width: 12%;
 }
 .product-details {
-  float: left;
-  width: 29%;
+  /* float: left;
+  width: 29%; */
 }
 .product-price {
   float: left;
@@ -4284,10 +4416,12 @@ input::placeholder {
     width: 40%;
   }
 }
+
 .nav-justified > li {
   display: table-cell;
   /* width: 200px  ; */
 }
+
 .swiper-container-horizontal
   > .swiper-pagination-bullets
   .swiper-pagination-bullet::before,
@@ -4297,6 +4431,7 @@ input::placeholder {
 [class^="swiper-button-"] {
   transition: all 0.3s ease;
 }
+
 *,
 *:before,
 *:after {
@@ -4304,6 +4439,7 @@ input::placeholder {
   margin: 0;
   padding: 0;
 }
+
 .swiper-container {
   width: 100%;
   height: 28vw;
@@ -4319,6 +4455,7 @@ input::placeholder {
   opacity: 1;
   visibility: visible;
 }
+
 .swiper-slide {
   background-position: center;
   background-size: cover;
@@ -4344,17 +4481,21 @@ input::placeholder {
   font-size: 13px;
   line-height: 1.4;
 }
+
 [class^="swiper-button-"] {
   width: 44px;
   opacity: 0;
   visibility: hidden;
 }
+
 .swiper-button-prev {
   transform: translateX(50px);
 }
+
 .swiper-button-next {
   transform: translateX(-50px);
 }
+
 .swiper-container-horizontal
   > .swiper-pagination-bullets
   .swiper-pagination-bullet {
@@ -4391,6 +4532,7 @@ input::placeholder {
   .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   border-width: 1px;
 }
+
 @media (max-width: 1180px) {
   .swiper-slide .content .title {
     font-size: 25px;
@@ -4407,11 +4549,13 @@ input::placeholder {
     padding-top: 0;
   }
 }
+
 .product-btn {
   text-align: center;
   align-self: flex-end;
   width: 100%;
 }
+
 .btn-group-sm > .btn,
 .btn-sm {
   padding: 0.375rem 1rem;
@@ -4419,6 +4563,7 @@ input::placeholder {
   line-height: 1.5;
   border-radius: 0.25rem;
 }
+
 .btn-outline-primary {
   color: #fff;
   border-color: #e31836;
