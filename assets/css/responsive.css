@@ -349,8 +349,19 @@ background-color: transparent;
 }
 @media only screen and (max-width: 576px) 
 
-
 {
+
+.faq-page .nav 
+{
+  display: block;
+  margin-bottom: 5px;
+}
+.faq-page .nav-pills .listing-nav
+{
+  margin-bottom: 5px;
+
+}
+
   header .nav-icon-right .nav-item
   {
     /* display: contents; */

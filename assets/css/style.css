@@ -691,8 +691,10 @@ h2 {
 /**********************************/
 .breadcrumb-wrap {
   position: relative;
-  width: 100%;
-  margin-top: 18px;
+    width: 100%;
+    /* margin-top: 18px; */
+    padding: 1rem 0.2rem 1rem;
+    background-color: #eae9e9;
 }
 
 .breadcrumb-wrap .breadcrumb {
