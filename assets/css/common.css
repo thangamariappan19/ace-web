@@ -3895,3 +3895,12 @@ button:disabled {
   font-size: 13px;
   line-height: 30px;
 }
+.btn-continue-shop:hover {
+  background-color: #4d4a4b;
+  color: #fff !important;
+  border-color: #4d4a4b;
+  height: 45px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 30px;
+}
