@@ -16,8 +16,8 @@
       rel="stylesheet"
     />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <!-- CSS Libraries -->
     <link href="assets/css/stackpath-bootstrap.min.css" rel="stylesheet" />
     <link
@@ -37,6 +37,10 @@
     <link href="assets/css/common.css" rel="stylesheet" />
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <link href="assets/css/checkout.css" rel="stylesheet" />
+
+    <style>
+
+    </style>
     
      
   </head>
@@ -421,675 +425,680 @@
 
 
 
-     <!-- Cart wizard Table -->
+     <!-- Checkout wizard Table -->
 
         
 
-     
-          <div class="product-detail-bottom">
-            <div>
-              <ul class="nav nav-pills mb30">
-             
-                <li class="">
-                  <a class="nav-link listing-nav active" data-toggle="tab" role="tab" href="#delivery-details" aria-expanded="true"><span class="cart-tab-number">1</span> <span class="cart-tab-active-number"><i class="fa fa-check-circle"></i></span> Delivery Details</a>
-                </li>
-                <li class="">
-                  <a class="nav-link listing-nav" data-toggle="tab" role="tab" href="#payment-details" aria-expanded="false"><span class="cart-tab-number">2</span> <span class="cart-tab-active-number"><i class="fa fa-check-circle"></i></span> Payment Details</a>
-                </li>
-                <li class="">
-                  <a class="nav-link listing-nav" data-toggle="tab" role="tab" href="#confirmation" aria-expanded="false"><span class="cart-tab-number">3</span> <span class="cart-tab-active-number"><i class="fa fa-check-circle"></i></span> Confirmation</a>
-                </li>
- 
-              </ul>
+           <div class="product-detail-bottom">
 
-              <div class="tab-content">
-               
-                <div id="delivery-details" class="tab-pane active in shopping-cart cart-details section-btm">
+                  <!-- Tab navigation -->
 
+                  <ul class="tnav tnav-tabs" id="cTab" role="tab">
+                    <li class="tnav-item">
+                      <a class="tnav-link active" id="delivery-tab" data-toggle="tab" href="#delivery-details" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-check-circle"></i> Delivery Details</a>
+                    </li>
+                    <li class="tnav-item">
+                      <a class="tnav-link" id="payment-tab" data-toggle="tab" href="#payment-details" role="tab" aria-controls="profile" aria-selected="false"><i class="fa fa-check-circle"></i> Payment Details</a>
+                    </li>
+                    <li class="tnav-item">
+                      <a class="tnav-link" id="confirmation-tab" data-toggle="tab" href="#confirmation" role="tab" aria-controls="contact" aria-selected="false"><i class="fa fa-check-circle"></i> Confirmation</a>
+                    </li>
+                  </ul>
 
-                    <!-- delivery Details -->
-
-                         
-                    <div class="row">
-                        <div class="col-xl-7 col-md-12">
+                  <!-- Tab content -->
+                  <div class="tab-content" id="cTabContent">
+                    <div class="tab-pane fade show active cart-details" id="delivery-details" role="tabpanel" aria-labelledby="delivery-tab">
+                      
                           
-                
-                              
-                            <div class="order-md-1">
-                                <h4 class="cart-heading text-center text-bold">Delivery Details</h4>
-                                <form action="" method="POST" id="address-form" class="mt30" style="padding:10px;">
-                                  <fieldset>
-                
-                                   <div class="row floating-form">
-                
-                                        <div class="col-md-6">
-                
-                                            <div class="floating-label">      
-                                                <input class="floating-input" type="text" placeholder=" ">
-                                                <span class="highlight"></span>
-                                                <label>First Name</label>
-                                            </div>
-                                            
-                                        </div>
-                
-                                        <div class="col-md-6">
-                
-                                            <div class="floating-label">      
-                                                <input class="floating-input" type="text" placeholder=" ">
-                                                <span class="highlight"></span>
-                                                <label>Last Name</label>
-                                            </div>
-                                            
-                                        </div>
-                
-                                        <div class="col-md-6">
-                
-                                            <div class="floating-label">      
-                                                <input class="floating-input" type="text" placeholder=" ">
-                                                <span class="highlight"></span>
-                                                <label>Building Type</label>
-                                            </div>
-                                            
-                                        </div>
-                
-                                        <div class="col-md-6">
-                
-                                            <div class="floating-label">      
-                                                <input class="floating-input" type="text" placeholder=" ">
-                                                <span class="highlight"></span>
-                                                <label>Area</label>
-                                            </div>
-                                            
-                                        </div>
-                
-                                        <div class="col-md-12">
-                
-                                            <div class="floating-label">      
-                                                <textarea class="floating-input floating-textarea" placeholder=" "></textarea>
-                                                <span class="highlight"></span>
-                                                <label>Block</label>
+                             <!-- Delivery tab -->
+
+
+                            <div class="row">
+                              <div class="col-xl-7 col-md-12">
+                                
+                      
+                                    
+                                  <div class="order-md-1">
+                                      <h4 class="cart-heading text-center text-bold">Delivery Details</h4>
+                                      <form action="" method="POST" id="address-form" class="mt30" style="padding:10px;">
+                                        <fieldset>
+                      
+                                         <div class="row floating-form">
+                      
+                                              <div class="col-md-6">
+                      
+                                                  <div class="floating-label">      
+                                                      <input class="floating-input" type="text" placeholder=" ">
+                                                      <span class="highlight"></span>
+                                                      <label>First Name</label>
+                                                  </div>
+                                                  
                                               </div>
-                                           
-                                            
-                                        </div>
-                
-                                        <div class="col-md-6">
-                
-                                            <div class="floating-label">      
-                                                <input class="floating-input" type="text" placeholder=" ">
-                                                <span class="highlight"></span>
-                                                <label>Street</label>
-                                            </div>
-                                            
-                                        </div>
-                
-                                        <div class="col-md-6">
-                
-                                            <div class="floating-label">      
-                                                <input class="floating-input" type="text" placeholder=" ">
-                                                <span class="highlight"></span>
-                                                <label>Building No</label>
-                                            </div>
-                                            
-                                        </div>
-                
-                                        <div class="col-md-6">
-                
-                                            <div class="floating-label">      
-                                                <input class="floating-input" type="text" placeholder=" ">
-                                                <span class="highlight"></span>
-                                                <label>Flat No</label>
-                                            </div>
-                                            
-                                        </div>
-                
-                                        <div class="col-md-6">
-                
-                                            <div class="floating-label">      
-                                                <input class="floating-input" type="text" placeholder=" ">
-                                                <span class="highlight"></span>
-                                                <label>Mobile No</label>
-                                            </div>
-                                            
-                                        </div>
-                
-                
-                                   </div>
-                
-                
+                      
+                                              <div class="col-md-6">
+                      
+                                                  <div class="floating-label">      
+                                                      <input class="floating-input" type="text" placeholder=" ">
+                                                      <span class="highlight"></span>
+                                                      <label>Last Name</label>
+                                                  </div>
+                                                  
+                                              </div>
+                      
+                                              <div class="col-md-6">
+                      
+                                                  <div class="floating-label">      
+                                                      <input class="floating-input" type="text" placeholder=" ">
+                                                      <span class="highlight"></span>
+                                                      <label>Building Type</label>
+                                                  </div>
+                                                  
+                                              </div>
+                      
+                                              <div class="col-md-6">
+                      
+                                                  <div class="floating-label">      
+                                                      <input class="floating-input" type="text" placeholder=" ">
+                                                      <span class="highlight"></span>
+                                                      <label>Area</label>
+                                                  </div>
+                                                  
+                                              </div>
+                      
+                                              <div class="col-md-12">
+                      
+                                                  <div class="floating-label">      
+                                                      <textarea class="floating-input floating-textarea" placeholder=" "></textarea>
+                                                      <span class="highlight"></span>
+                                                      <label>Block</label>
+                                                    </div>
+                                                 
+                                                  
+                                              </div>
+                      
+                                              <div class="col-md-6">
+                      
+                                                  <div class="floating-label">      
+                                                      <input class="floating-input" type="text" placeholder=" ">
+                                                      <span class="highlight"></span>
+                                                      <label>Street</label>
+                                                  </div>
+                                                  
+                                              </div>
+                      
+                                              <div class="col-md-6">
+                      
+                                                  <div class="floating-label">      
+                                                      <input class="floating-input" type="text" placeholder=" ">
+                                                      <span class="highlight"></span>
+                                                      <label>Building No</label>
+                                                  </div>
+                                                  
+                                              </div>
+                      
+                                              <div class="col-md-6">
+                      
+                                                  <div class="floating-label">      
+                                                      <input class="floating-input" type="text" placeholder=" ">
+                                                      <span class="highlight"></span>
+                                                      <label>Flat No</label>
+                                                  </div>
+                                                  
+                                              </div>
+                      
+                                              <div class="col-md-6">
+                      
+                                                  <div class="floating-label">      
+                                                      <input class="floating-input" type="text" placeholder=" ">
+                                                      <span class="highlight"></span>
+                                                      <label>Mobile No</label>
+                                                  </div>
+                                                  
+                                              </div>
+                      
+                      
+                                         </div>
+                      
+                      
+                                  
+                                        
                             
-                                  
-                      
-                                  
-                                
-                             
-                      
-                                    <div class="row address-lable">
-                                      <div class="col-md-2">
-                                        <label class="headingLabel cart-bottom-label " for="same-address"
-                                          >Delivery Type</label
-                                        >
-                                      </div>
-                                      <div class="col-md-3  mb-3">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" checked="" class="custom-control-input">
-                                            <div class="custom-control-label">
-                                                Standard delivery
+                                        
+                                      
+                                   
+                            
+                                          <div class="row address-lable">
+                                            <div class="col-md-2">
+                                              <label class="headingLabel cart-bottom-label " for="same-address"
+                                                >Delivery Type</label
+                                              >
                                             </div>
-                                          </label>
-                                      </div>
-                                      <div class="col-md-3 mb-3">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" checked="" class="custom-control-input">
-                                            <div class="custom-control-label">
-                                                Express Delivery
+                                            <div class="col-md-3  mb-3">
+                                              <label class="custom-control custom-checkbox">
+                                                  <input type="checkbox" checked="" class="custom-control-input">
+                                                  <div class="custom-control-label">
+                                                      Standard delivery
+                                                  </div>
+                                                </label>
                                             </div>
-                                          </label>
-                                      </div>
-                                      <div class="col-md-3 mb-3">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" checked="" class="custom-control-input">
-                                            <div class="custom-control-label">
-                                                Store Pickup
+                                            <div class="col-md-3 mb-3">
+                                              <label class="custom-control custom-checkbox">
+                                                  <input type="checkbox" checked="" class="custom-control-input">
+                                                  <div class="custom-control-label">
+                                                      Express Delivery
+                                                  </div>
+                                                </label>
                                             </div>
-                                          </label>
-                                      </div>
+                                            <div class="col-md-3 mb-3">
+                                              <label class="custom-control custom-checkbox">
+                                                  <input type="checkbox" checked="" class="custom-control-input">
+                                                  <div class="custom-control-label">
+                                                      Store Pickup
+                                                  </div>
+                                                </label>
+                                            </div>
+                                          </div>
+                                      
+                                        </fieldset>
+                                      </form>
                                     </div>
-                                
-                                  </fieldset>
-                                </form>
+                      
+                            
+                      
+                      
+                      
+                      
                               </div>
+                      
+                              <div class="col-xl-5 col-md-12">
+                      
+                                 <div class="cart-totals">
+                
+                                    <div class="cart-total-title">
+                                      <h3>Your Order</h3>
+                                    </div>
+                
+                                    <div class="cart-orders-particulars">
+                                  
+                                      <table class="your-order-table">
+                
+                                          <tr>
+                                            <thead>
+                                            <th class="sno">Sno</th>
+                                            <th class="product">Product</th>
+                                            <th class="qty">Qty</th>
+                                            <th class="total">Total</th>
+                                            </thead>
+                                          </tr>
+                                          <tbody>
+                                            <tr>
+                                              <td class="sno">1</td>
+                                              <td class="product">Magic Bullet Blender set MB4-101 (400 2SETS)</td>
+                                              <td class="qty">35</td>
+                                              <td class="total">KWD 1520.25 </td>
+                
+                                            </tr>
+                                          </tbody>
+                
+                                      </table>
+                
+                                    </div>
+                      
+                                     <div class="cart-total-title">
+                                       <h3>Your Cart</h3>
+                                     </div>
+                      
+                                     <div class="cart-totals-particulars">
+                      
+                                        <div class="cart-subtotal d-flex align-items-center justify-content-between">
+                                          <label>Subtotal</label>
+                                          <span>KWD 100.00</span>
+                                        </div>
+                      
+                                        <div class="cart-subcharges d-flex align-items-center justify-content-between">
+                                          <label>Delivery Charges</label>
+                                          <span>KWD 10.00</span>
+                                        </div>
+                      
+                                     
+                      
+                                        <div class="cart-subcharges d-flex align-items-center justify-content-between">
+                                          <label>Discount</label>
+                                          <span>KWD 10.00</span>
+                                        </div>
+                      
+                                        
+                                        <div class="cart-total d-flex align-items-center justify-content-between">
+                                          <label>Total</label>
+                                          <span>KWD 100.00</span>
+                                        </div>
+                      
+                                        <!-- Place Order -->
+                      
+                                           
+                                        <div class="place-order">
+                                          <button class="btn btn-placeorder">Place Order</button>
+                                        </div>
+                      
+                      
+                                        <!-- Place Order -->
+                      
+                                     </div>
+                      
+                                 </div>
+                      
+                              </div>
+                      
+                               
+                             
+                            </div>
+                         
+
+                             <!-- Delivery tab -->
+
+                    </div>
+
+
+                    <div class="tab-pane fade cart-details" id="payment-details" role="tabpanel" aria-labelledby="payment-tab">
+
+
+                           
+                            <!-- Payment details -->
+
+                            <div class="row">
+                              <div class="col-xl-7 col-md-12">
+                                
+                      
+                                    
+                                  <div class="">
+                                      <h4 class="cart-heading text-center text-bold">Payment Details</h4>
+                                      <form action="" method="POST" id="address-form" class="mt30" style="padding:10px;">
+                                        <fieldset>
+                
+                
+                                        <div class="row mb30 payment-page">
+                
+                                            
+                                          <div class="col-md-4 text-center">
+                                              <img src="assets/img/cod.png" class="img-responsive">
+                                              <label class="custom-control custom-radio payment-image-radio">
+                                                <input type="radio" name="myfilter_radio" checked="" class="custom-control-input">
+                                                <div class="custom-control-label">COD</div>
+                                              </label>
+                                          </div>
+                                          
+                                          <div class="col-md-4 text-center">
+                                              <img src="assets/img/knet.png" class="img-responsive">
+                                              <label class="custom-control custom-radio payment-image-radio">
+                                                <input type="radio" name="myfilter_radio" class="custom-control-input">
+                                                <div class="custom-control-label">K NET</div>
+                                              </label>
+                
+                                          </div>
+                          
+                
+                                          <div class="col-md-4 text-center">
+                                              <img src="assets/img/cards.png" class="img-responsive">
+                
+                                              <label class="custom-control custom-radio payment-image-radio">
+                                                <input type="radio" name="myfilter_radio" class="custom-control-input">
+                                                <div class="custom-control-label">Visa / Master</div>
+                                              </label>
+                
+                                          </div>
+                                          
+                
+                
+                
+                                        </div>
+                
                 
                       
-                
-                
-                
-                
-                        </div>
-                
-                        <div class="col-xl-5 col-md-12">
-                
-                           <div class="cart-totals">
-
-                              <div class="cart-total-title">
-                                <h3>Your Order</h3>
-                              </div>
-
-                              <div class="cart-orders-particulars">
+                                         <div class="row floating-form">
+                      
+                                              <div class="col-md-12">
+                      
+                                                  <div class="floating-label">      
+                                                      <input class="floating-input" type="text" placeholder=" ">
+                                                      <span class="highlight"></span>
+                                                      <label><i class="fa fa-credit-card"></i> Card Number</label>
+                                                  </div>
+                                                  
+                                              </div>
+                      
+                                              <div class="col-md-6">
+                      
+                                                  <div class="floating-label">      
+                                                      <input class="floating-input" type="text" placeholder=" ">
+                                                      <span class="highlight"></span>
+                                                      <label><i class="fa fa-calendar-o"></i> Expiry Date</label>
+                                                  </div>
+                                                  
+                                              </div>
+                      
+                                              <div class="col-md-6">
+                      
+                                                  <div class="floating-label">      
+                                                      <input class="floating-input" type="email" placeholder=" ">
+                                                      <span class="highlight"></span>
+                                                      <label><i class="fa fa-credit-card"></i> CVV Code</label>
+                                                  </div>
+                                                  
+                                              </div>
+                      
+                                              <div class="col-md-12">
+                      
+                                                  <div class="floating-label">      
+                                                      <input class="floating-input" type="text" placeholder=" ">
+                                                      <span class="highlight"></span>
+                                                      <label><i class="fa fa-user"></i> Card Holder</label>
+                                                  </div>
+                                                  
+                                              </div>
+                      
+                                            
+                      
+                                            
+                      
+                                         
+                      
+                                             
+                      
+                                         
+                      
+                                         </div>
                             
-                                <table class="your-order-table">
-
-                                    <tr>
-                                      <thead>
-                                      <th class="sno">Sno</th>
-                                      <th class="product">Product</th>
-                                      <th class="qty">Qty</th>
-                                      <th class="total">Total</th>
-                                      </thead>
-                                    </tr>
-                                    <tbody>
-                                      <tr>
-                                        <td class="sno">1</td>
-                                        <td class="product">Magic Bullet Blender set MB4-101 (400 2SETS)</td>
-                                        <td class="qty">35</td>
-                                        <td class="total">KWD 1520.25 </td>
-  
-                                      </tr>
-                                    </tbody>
-
-                                </table>
-
+                                         
+                                        </fieldset>
+                                      </form>
+                                    </div>
+                      
+                                 
+                      
+                      
+                      
+                      
                               </div>
+                      
+                              <div class="col-xl-5 col-md-12">
+                      
+                                 <div class="cart-totals">
                 
-                               <div class="cart-total-title">
-                                 <h3>Your Cart</h3>
-                               </div>
+                                        <div class="cart-total-title">
+                                          <h3>Your Order</h3>
+                                        </div>
                 
-                               <div class="cart-totals-particulars">
+                                        <div class="cart-orders-particulars">
+                                      
+                                          <table class="your-order-table">
                 
-                                  <div class="cart-subtotal d-flex align-items-center justify-content-between">
-                                    <label>Subtotal</label>
-                                    <span>KWD 100.00</span>
-                                  </div>
+                                              <tr>
+                                                <thead>
+                                                <th class="sno">Sno</th>
+                                                <th class="product">Product</th>
+                                                <th class="qty">Qty</th>
+                                                <th class="total">Total</th>
+                                                </thead>
+                                              </tr>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="sno">1</td>
+                                                  <td class="product">Magic Bullet Blender set MB4-101 (400 2SETS)</td>
+                                                  <td class="qty">35</td>
+                                                  <td class="total">KWD 1520.25 </td>
                 
-                                  <div class="cart-subcharges d-flex align-items-center justify-content-between">
-                                    <label>Delivery Charges</label>
-                                    <span>KWD 10.00</span>
-                                  </div>
+                                                </tr>
+                                              </tbody>
                 
-                               
+                                          </table>
                 
-                                  <div class="cart-subcharges d-flex align-items-center justify-content-between">
-                                    <label>Discount</label>
-                                    <span>KWD 10.00</span>
-                                  </div>
-                
-                                  
-                                  <div class="cart-total d-flex align-items-center justify-content-between">
-                                    <label>Total</label>
-                                    <span>KWD 100.00</span>
-                                  </div>
-                
-                                  <!-- Place Order -->
-                
-                                     
-                                  <div class="place-order">
-                                    <button class="btn btn-placeorder">Place Order</button>
-                                  </div>
-                
-                
-                                  <!-- Place Order -->
-                
-                               </div>
-                
-                           </div>
-                
-                        </div>
-                
-                         
-                       
-                      </div>
-
-
-                    <!-- delivery Details -->
-
-
-                    <a class="btn btn-primary btnNext" >Next <i class="fa fa-angle-double-right"></i></a>
-
-                  
-                </div>
-                <div id="payment-details" class="shopping-cart cart-details section-btm tab-pane fade">
-
-                    <!-- payment details -->
-
- 
-                    <div class="row">
-                        <div class="col-xl-7 col-md-12">
-                          
+                                        </div>
                 
                               
-                            <div class="">
-                                <h4 class="cart-heading text-center text-bold">Payment Details</h4>
-                                <form action="" method="POST" id="address-form" class="mt30" style="padding:10px;">
-                                  <fieldset>
-
-
-                                  <div class="row mb30 payment-page">
-
-                                      
-                                    <div class="col-md-4 text-center">
-                                        <img src="assets/img/cod.png" class="img-responsive">
-                                        <label class="custom-control custom-radio payment-image-radio">
-                                          <input type="radio" name="myfilter_radio" checked="" class="custom-control-input">
-                                          <div class="custom-control-label">COD</div>
-                                        </label>
-                                    </div>
-                                    
-                                    <div class="col-md-4 text-center">
-                                        <img src="assets/img/knet.png" class="img-responsive">
-                                        <label class="custom-control custom-radio payment-image-radio">
-                                          <input type="radio" name="myfilter_radio" class="custom-control-input">
-                                          <div class="custom-control-label">K NET</div>
-                                        </label>
-
-                                    </div>
-                    
-
-                                    <div class="col-md-4 text-center">
-                                        <img src="assets/img/cards.png" class="img-responsive">
-
-                                        <label class="custom-control custom-radio payment-image-radio">
-                                          <input type="radio" name="myfilter_radio" class="custom-control-input">
-                                          <div class="custom-control-label">Visa / Master</div>
-                                        </label>
-
-                                    </div>
-                                    
-
-
-
-                                  </div>
-
-
-                
-                                   <div class="row floating-form">
-                
-                                        <div class="col-md-12">
-                
-                                            <div class="floating-label">      
-                                                <input class="floating-input" type="text" placeholder=" ">
-                                                <span class="highlight"></span>
-                                                <label><i class="fa fa-credit-card"></i> Card Number</label>
-                                            </div>
-                                            
-                                        </div>
-                
-                                        <div class="col-md-6">
-                
-                                            <div class="floating-label">      
-                                                <input class="floating-input" type="text" placeholder=" ">
-                                                <span class="highlight"></span>
-                                                <label><i class="fa fa-calendar-o"></i> Expiry Date</label>
-                                            </div>
-                                            
-                                        </div>
-                
-                                        <div class="col-md-6">
-                
-                                            <div class="floating-label">      
-                                                <input class="floating-input" type="email" placeholder=" ">
-                                                <span class="highlight"></span>
-                                                <label><i class="fa fa-credit-card"></i> CVV Code</label>
-                                            </div>
-                                            
-                                        </div>
-                
-                                        <div class="col-md-12">
-                
-                                            <div class="floating-label">      
-                                                <input class="floating-input" type="text" placeholder=" ">
-                                                <span class="highlight"></span>
-                                                <label><i class="fa fa-user"></i> Card Holder</label>
-                                            </div>
-                                            
-                                        </div>
-                
-                                      
-                
-                                      
-                
-                                   
-                
-                                       
-                
-                                   
-                
-                                   </div>
                       
-                                   
-                                  </fieldset>
-                                </form>
-                              </div>
-                
-                           
-                
-                
-                
-                
-                        </div>
-                
-                        <div class="col-xl-5 col-md-12">
-                
-                           <div class="cart-totals">
-
-                                  <div class="cart-total-title">
-                                    <h3>Your Order</h3>
-                                  </div>
-
-                                  <div class="cart-orders-particulars">
-                                
-                                    <table class="your-order-table">
-
-                                        <tr>
-                                          <thead>
-                                          <th class="sno">Sno</th>
-                                          <th class="product">Product</th>
-                                          <th class="qty">Qty</th>
-                                          <th class="total">Total</th>
-                                          </thead>
-                                        </tr>
-                                        <tbody>
-                                          <tr>
-                                            <td class="sno">1</td>
-                                            <td class="product">Magic Bullet Blender set MB4-101 (400 2SETS)</td>
-                                            <td class="qty">35</td>
-                                            <td class="total">KWD 1520.25 </td>
-
-                                          </tr>
-                                        </tbody>
-
-                                    </table>
-
-                                  </div>
-
-                        
-                
-                               <div class="cart-total-title">
-                                 <h3>Your Cart</h3>
-                               </div>
-                
-                               <div class="cart-totals-particulars">
-                
-                                  <div class="cart-subtotal d-flex align-items-center justify-content-between">
-                                    <label>Subtotal</label>
-                                    <span>$100.00 KWD</span>
-                                  </div>
-                
-                                  <div class="cart-subcharges d-flex align-items-center justify-content-between">
-                                    <label>Delivery Charges</label>
-                                    <span>$10.00 KWD</span>
-                                  </div>
-                
-                               
-                
-                                  <div class="cart-subcharges d-flex align-items-center justify-content-between">
-                                    <label>Discount</label>
-                                    <span>$10.00 KWD</span>
-                                  </div>
-                
-                                  
-                                  <div class="cart-total d-flex align-items-center justify-content-between">
-                                    <label>Total</label>
-                                    <span>$100.00 KWD</span>
-                                  </div>
-                
-                          
-                
-                                  <!-- Place Order -->
-                
+                                     <div class="cart-total-title">
+                                       <h3>Your Cart</h3>
+                                     </div>
+                      
+                                     <div class="cart-totals-particulars">
+                      
+                                        <div class="cart-subtotal d-flex align-items-center justify-content-between">
+                                          <label>Subtotal</label>
+                                          <span>$100.00 KWD</span>
+                                        </div>
+                      
+                                        <div class="cart-subcharges d-flex align-items-center justify-content-between">
+                                          <label>Delivery Charges</label>
+                                          <span>$10.00 KWD</span>
+                                        </div>
+                      
                                      
-                                  <div class="place-order">
-                                    <button class="btn btn-placeorder">Place Order</button>
-                                  </div>
-                
-                
-                                  <!-- Place Order -->
-                
-                               </div>
-                
-                           </div>
-                
-                        </div>
-                
-                
-                       
-                      </div>
-
-                     
-                    <!-- payment details -->
-                    <a class="btn btn-primary btnPrevious" ><i class="fa fa-angle-double-left"></i> Previous </i></a>
-
-                    <a class="btn btn-primary btnNext" >Next <i class="fa fa-angle-double-right"></i></a>
-                   
-                </div>
-                <div id="confirmation" class="order-confirmation section-btm tab-pane fade">
-
-
-                    <!-- order confirm -->
-
-                    <div class="order-confirm-thanks">
-                        <h3><i class="fa fa-thumbs-up"></i>Your Order Placed Successfully</h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xl-6 col-md-12">
-
-                            
-
-
-                            <!-- order -details -->
-
-                            <div class="row order-confirm-product">
-
-
-                                <div class="col-xl-3 col-md-12">
-
-                                    <img src="assets/img/Ace-Web_53.png" class="img-responsive">
-                                
-
-                                </div>
-
-                                <div class="col-xl-4 col-md-12">
-
-                                    <div class="product-title">
-                                        <h5>Magic Bullet Blender set MB4-101 (400 2SETS)</h5>
-                                    </div>
-                                    <div class="confirm-product-color">
-                                        <p><span>Color</span>: Black</p>
-                                    </div>
-                                    <div class="confirm-product-qty">
-                                        <p><span>Qty</span>: 02</p>
-                                    </div>
-
-                                    <div class="confirm-download-invoice mt20">
-                                        <button class="btn btn-primary order-confirm-invoice"><i class="fa fa-file"></i>Download Invoice</button>
-                                    </div>
-
-                                    
-                                </div>
-
-                                <div class="col-xl-5 col-md-12">
-
-
-                                    <div class="cart-totals">
-                
-                                       
-                                        <div class="cart-totals-particulars">
-                         
-                                           <div class="cart-subtotal d-flex align-items-center justify-content-between">
-                                             <label>Subtotal</label>
-                                             <span>KWD 100.00</span>
-                                           </div>
-                         
-                                           <div class="cart-subcharges d-flex align-items-center justify-content-between">
-                                             <label>Delivery Charges</label>
-                                             <span>KWD 10.00</span>
-                                           </div>
-                         
-                                       
-                         
-                                           <div class="cart-subcharges d-flex align-items-center justify-content-between">
-                                             <label>Discount</label>
-                                             <span>KWD 10.00</span>
-                                           </div>
-                         
-                                           
-                                           <div class="order-confirm-total cart-total d-flex align-items-center justify-content-between">
-                                             <label>Total</label>
-                                             <span>KWD 100.00</span>
-                                           </div>
-                         
+                      
+                                        <div class="cart-subcharges d-flex align-items-center justify-content-between">
+                                          <label>Discount</label>
+                                          <span>$10.00 KWD</span>
+                                        </div>
+                      
                                         
-                         
-                                      
-                         
-                         
+                                        <div class="cart-total d-flex align-items-center justify-content-between">
+                                          <label>Total</label>
+                                          <span>$100.00 KWD</span>
                                         </div>
-                         
-                                    </div>
-                                    
-                                </div>
-
-
-
+                      
+                                
+                      
+                                        <!-- Place Order -->
+                      
+                                           
+                                        <div class="place-order">
+                                          <button class="btn btn-placeorder">Place Order</button>
+                                        </div>
+                      
+                      
+                                        <!-- Place Order -->
+                      
+                                     </div>
+                      
+                                 </div>
+                      
+                              </div>
+                      
+                      
+                             
                             </div>
 
 
+                            <!-- Payment details -->
 
-
-                            <!-- order -details -->
-
-                        </div>
-
-
-                        <!-- track -->
-
-                        <div class="col-xl-6 col-md-12">
-
-                            <div class="order-confirm-track">
-
-                                <h3>Track Your Order <span>(Expected Delivery Aug 15)</span></h3>
-                                
-                                <hr>
-
-                                <!-- tracking -->
-
-
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-12">
-                                        <ul id="progressbar" class="text-center">
-                                            <li class="active step0"></li>
-                                            <li class="active step0"></li>
-                                            <li class="active step0"></li>
-                                            <li class="step0"></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="row top" style="justify-content: space-around">
-                                    <div class="row d-flex icon-content"> 
-                                        <div class="d-flex flex-column">
-                                            <p class="font-weight-bold">Ordered</p>
-                                        </div>
-                                    </div>
-                                    <div class="row d-flex icon-content"> 
-                                        <div class="d-flex flex-column">
-                                            <p class="font-weight-bold">Packed</p>
-                                        </div>
-                                    </div>
-                                    <div class="row d-flex icon-content"> 
-                                        <div class="d-flex flex-column">
-                                            <p class="font-weight-bold">Shipped</p>
-                                        </div>
-                                    </div>
-                                    <div class="row d-flex icon-content"> 
-                                        <div class="d-flex flex-column">
-                                            <p class="font-weight-bold">Arrived</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="order-track-status">
-                                    <p>Your Item has been picked</p>
-                                </div>
-
-                                
-
-                           
-
-                                <!-- tracking -->
-                            
-                            </div>
-
-                        </div>
-
-                        <!-- track -->
 
 
                     </div>
-                    <!-- order confrm -->
-
-                    <a class="btn btn-primary btnPrevious" ><i class="fa fa-angle-double-left"></i> Previous</a>
 
 
-                 </div>
-              </div>
-            </div>
-          </div>
-        
-      
+                    <div class="tab-pane fade cart-details" id="confirmation" role="tabpanel" aria-labelledby="confirmation-tab">
+                     
+                   
+                       
+                                   <!-- order confirm -->
+
+                                    <div class="order-confirm-thanks">
+                                      <h3><i class="fa fa-thumbs-up"></i>Your Order Placed Successfully</h3>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xl-6 col-md-12">
+
+                                            
 
 
+                                            <!-- order -details -->
+
+                                            <div class="row order-confirm-product">
+
+
+                                                <div class="col-xl-3 col-md-12">
+
+                                                    <img src="assets/img/Ace-Web_53.png" class="img-responsive">
+                                                
+
+                                                </div>
+
+                                                <div class="col-xl-4 col-md-12">
+
+                                                    <div class="product-title">
+                                                        <h5>Magic Bullet Blender set MB4-101 (400 2SETS)</h5>
+                                                    </div>
+                                                    <div class="confirm-product-color">
+                                                        <p><span>Color</span>: Black</p>
+                                                    </div>
+                                                    <div class="confirm-product-qty">
+                                                        <p><span>Qty</span>: 02</p>
+                                                    </div>
+
+                                                    <div class="confirm-download-invoice mt20">
+                                                        <button class="btn btn-primary order-confirm-invoice"><i class="fa fa-file"></i>Download Invoice</button>
+                                                    </div>
+
+                                                    
+                                                </div>
+
+                                                <div class="col-xl-5 col-md-12">
+
+
+                                                    <div class="cart-totals">
+                                
+                                                      
+                                                        <div class="cart-totals-particulars">
+                                        
+                                                          <div class="cart-subtotal d-flex align-items-center justify-content-between">
+                                                            <label>Subtotal</label>
+                                                            <span>KWD 100.00</span>
+                                                          </div>
+                                        
+                                                          <div class="cart-subcharges d-flex align-items-center justify-content-between">
+                                                            <label>Delivery Charges</label>
+                                                            <span>KWD 10.00</span>
+                                                          </div>
+                                        
+                                                      
+                                        
+                                                          <div class="cart-subcharges d-flex align-items-center justify-content-between">
+                                                            <label>Discount</label>
+                                                            <span>KWD 10.00</span>
+                                                          </div>
+                                        
+                                                          
+                                                          <div class="order-confirm-total cart-total d-flex align-items-center justify-content-between">
+                                                            <label>Total</label>
+                                                            <span>KWD 100.00</span>
+                                                          </div>
+                                        
+                                                        
+                                        
+                                                      
+                                        
+                                        
+                                                        </div>
+                                        
+                                                    </div>
+                                                    
+                                                </div>
+
+
+
+                                            </div>
+
+
+
+
+                                            <!-- order -details -->
+
+                                        </div>
+
+
+                                        <!-- track -->
+
+                                        <div class="col-xl-6 col-md-12">
+
+                                            <div class="order-confirm-track">
+
+                                                <h3>Track Your Order <span>(Expected Delivery Aug 15)</span></h3>
+                                                
+                                                <hr>
+
+                                                <!-- tracking -->
+
+
+                                                <div class="row d-flex justify-content-center">
+                                                    <div class="col-12">
+                                                        <ul id="progressbar" class="text-center">
+                                                            <li class="active step0"></li>
+                                                            <li class="active step0"></li>
+                                                            <li class="active step0"></li>
+                                                            <li class="step0"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row top" style="justify-content: space-around">
+                                                    <div class="row d-flex icon-content"> 
+                                                        <div class="d-flex flex-column">
+                                                            <p class="font-weight-bold">Ordered</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row d-flex icon-content"> 
+                                                        <div class="d-flex flex-column">
+                                                            <p class="font-weight-bold">Packed</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row d-flex icon-content"> 
+                                                        <div class="d-flex flex-column">
+                                                            <p class="font-weight-bold">Shipped</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row d-flex icon-content"> 
+                                                        <div class="d-flex flex-column">
+                                                            <p class="font-weight-bold">Arrived</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="order-track-status">
+                                                    <p>Your Item has been picked</p>
+                                                </div>
+
+                                                
+
+                                          
+
+                                                <!-- tracking -->
+                                            
+                                            </div>
+
+                                        </div>
+
+                                        <!-- track -->
+
+
+                                    </div>
+
+                                    <!-- order confrm -->
+                   
+                   
+                   
+                    </div>
+
+
+                  </div>
+
+                  <!-- Tab carousel -->
+                  <div class="checkout-button-navigation">
+                  <button class="prevtab btn btn-success">Prev</button>
+                  <button class="nexttab btn btn-success">Next</button>
+                  </div>
+                
+
+             </div>
       
 
     <!-- Cart wizard Table -->
@@ -1246,30 +1255,9 @@
     
 
     
-<script>
-  $('.decrease_').click(function () {
-      decreaseValue(this);
-  });
-  $('.increase_').click(function () {
-      increaseValue(this);
-  });
-  function increaseValue(_this) {
-      var value = parseInt($(_this).siblings('input#number').val(), 10);
-      value = isNaN(value) ? 0 : value;
-      value++;
-      $(_this).siblings('input#number').val(value);
-  }
-
-  function decreaseValue(_this) {
-      var value = parseInt($(_this).siblings('input#number').val(), 10);
-      value = isNaN(value) ? 0 : value;
-      value < 1 ? value = 1 : '';
-      value--;
-      $(_this).siblings('input#number').val(value);
-  }
-</script>
 
 
+<!-- 
 <script>
    $('.btnNext').click(function(){
   $('.nav-tabs > .active').next('li').find('a').trigger('click');
@@ -1278,7 +1266,7 @@
   $('.btnPrevious').click(function(){
   $('.nav-tabs > .active').prev('li').find('a').trigger('click');
 });
-</script>
+</script> -->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -1295,6 +1283,30 @@
 
 
       <!-- mobile menu -->
+
+
+      <script>
+        $('.decrease_').click(function () {
+            decreaseValue(this);
+        });
+        $('.increase_').click(function () {
+            increaseValue(this);
+        });
+        function increaseValue(_this) {
+            var value = parseInt($(_this).siblings('input#number').val(), 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            $(_this).siblings('input#number').val(value);
+        }
+      
+        function decreaseValue(_this) {
+            var value = parseInt($(_this).siblings('input#number').val(), 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            $(_this).siblings('input#number').val(value);
+        }
+      </script>
 
   <script>
     (function($) {
@@ -1391,5 +1403,57 @@
     })(jQuery);
   </script>
 
+
+  <script>
+    function bootstrapTabControl(){
+  var i, items = $('.tnav-link'), pane = $('.tab-pane');
+  // next
+  $('.nexttab').on('click', function(){
+      for(i = 0; i < items.length; i++){
+          if($(items[i]).hasClass('active') == true){
+              break;
+          }
+      }
+      if(i < items.length - 1){
+          // for tab
+          $(items[i]).removeClass('active');
+          $(items[i+1]).addClass('active');
+          // for pane
+          $(pane[i]).removeClass('show active');
+          $(pane[i+1]).addClass('show active');
+      }
+
+  });
+  // Prev
+  $('.prevtab').on('click', function(){
+      for(i = 0; i < items.length; i++){
+          if($(items[i]).hasClass('active') == true){
+              break;
+          }
+      }
+      if(i != 0){
+          // for tab
+          $(items[i]).removeClass('active');
+          $(items[i-1]).addClass('active');
+          // for pane
+          $(pane[i]).removeClass('show active');
+          $(pane[i-1]).addClass('show active');
+      }
+  });
+}
+bootstrapTabControl();
+  </script>
+
+
+<script>
+  $(".tnav-tabs li.tnav-item a.tnav-link").click(function() {
+  $(".tnav-tabs li.tnav-item a.tnav-link").removeClass('active');
+});
+</script>
+
   </body>
+
+
+
+
 </html>
