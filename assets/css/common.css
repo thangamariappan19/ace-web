@@ -516,9 +516,38 @@ padding: 0px 0px;
  visibility: visible;
  opacity: 1;
  transform: scale(1);
+ height: 430px;
+ overflow-y: scroll;
  /* transition: visibility 0s, opacity 0.3s linear; */
  
 }
+
+
+
+.dropdown-menu::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+  background-color: #F5F5F5;
+  border-radius:5px;
+
+}
+
+.dropdown-menu::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: #e31836;
+  border-radius:5px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb
+{
+  background-color: #e31836;
+  border-radius:5px;
+
+}
+
+
+
 
 /* .navbar .dropdown-menu.show {
   display: block;
@@ -1411,11 +1440,11 @@ margin-top: 15px;
 width: 50%;
 }
 
-.ace-login .forget-password 
+/* .ace-login .forget-password 
 {
 float: right;
   margin-top: -30px;
-}
+} */
 
 
 
@@ -1984,8 +2013,8 @@ color: #fff;
 
 .cart-details 
 {
-margin-top: 50px;
-margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .btn-continue-shop
@@ -2534,7 +2563,7 @@ background-color:#5D4C46 !important;
 
 .card-header a:before {
   font-family: 'FontAwesome';
-  content: "\f077";
+  content: "\f078";
   float: right;
   transition: all 0.5s;
 }
@@ -3803,3 +3832,62 @@ margin-bottom: 5px;
   z-index:5;
 }
 
+/* offer tag */
+
+.offer-tag-listing {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  left: 63%;
+  width: 30%;
+}
+
+.offer-tag-listing p {
+  background-color: #118915;
+  padding: 10px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 11px;
+}
+
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+  color: #a3a4a6;
+  background-color: #ececec;
+  border: 1px solid #a3a4a6;
+}
+
+
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+
+/* .cart-details .nav-pills .nav-link.active, .nav-pills .show > .nav-link
+{
+  color: #ffffff !important;
+  background-color: #d40029;
+}
+.cart-details .nav-link 
+{
+  padding: 5px;
+} */
+
+.btn-placeorder {
+  width: 100%;
+  height: 45px;
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff !important;
+  line-height: 30px;
+}
+.btn-continue-shop {
+  background-color: #4d4a4b;
+  color: #fff !important;
+  border-color: #4d4a4b;
+  height: 45px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 30px;
+}
