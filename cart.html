@@ -594,7 +594,7 @@
                 <tr>
                     <td class="cart-product-thumbnail">
                         <div class="cart-p-relative">
-                          <!-- <p class="cart-outofstock">Out of stock</p> -->
+                          <p class="cart-outofstock">Out of stock</p>
 
                             <a href="product-default.html">
                                 <figure>
@@ -662,13 +662,35 @@
              
             </tbody>
         </table>
+        <div id="testmodal" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <!-- <h4 class="modal-title">Confirmation</h4> -->
+                  </div>
+                  <div class="modal-body">
+                      <p>Please remove/update out of stock products</p>
+                      <!-- <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p> -->
+                  </div>
+                  <div class="modal-footer">
+                      <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Update cart</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
 
+      
+      
+      
         <!-- cart actions -->
 
         <div class="cart-actions row">
 
            <div class="col-xl-4 col-12 col-md-4">
-               <button class="btn btn-continue-shop"><i class="fa fa-check-circle"></i> Continue Shopping</button>
+               <button class="btn btn-continue-shop show-modal" id="element" ><i class="fa fa-check-circle"></i> Continue Shopping</button>
            </div>
 
            <div class="offset-xl-3 col-xl-3 col-12 offset-md-2 col-md-3">
@@ -953,6 +975,25 @@
     <!-- Back to Top -->
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     <script>
+      $(document).ready(function(){
+  var show_btn=$('.show-modal');
+  var show_btn=$('.show-modal');
+  //$("#testmodal").modal('show');
+  
+    show_btn.click(function(){
+      $("#testmodal").modal('show');
+  })
+});
+
+$(function() {
+        $('#element').on('click', function( e ) {
+            Custombox.open({
+                target: '#testmodal-1',
+                effect: 'fadein'
+            });
+            e.preventDefault();
+        });
+    });
       function logo() {
         $(document).ready(function () {
           $(".category").slick({
