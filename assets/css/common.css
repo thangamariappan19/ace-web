@@ -3892,6 +3892,18 @@ button:disabled {
   color: #fff !important;
   line-height: 30px;
 }
+
+.btn-placeorder:visited,
+.btn-placeorder:hover,
+.btn-placeorder:focus {
+  width: 100%;
+  height: 45px;
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff !important;
+  line-height: 30px;
+}
+
 .btn-continue-shop {
   background-color: #4d4a4b;
   color: #fff !important;
@@ -3910,7 +3922,15 @@ button:disabled {
   font-size: 13px;
   line-height: 30px;
 }
-
+.btn-continue-shop:focus {
+  background-color: #4d4a4b;
+  color: #fff !important;
+  border-color: #4d4a4b;
+  height: 45px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 30px;
+}
 
 .tnav {
   position: relative;
@@ -4088,4 +4108,19 @@ color: #e31836;
   background-color: #efe9e9;
     padding-bottom: 15px;
     padding-top: 5px;
+}
+
+.track-status 
+{
+justify-content: space-around;
+}
+#progressbar li span 
+{
+  margin-top: 10px;
+    display: none;
+    font-weight: 600;
+}
+.track-detail 
+{
+  color: rgb(51, 48, 48);
 }

@@ -4547,7 +4547,7 @@ heart icon */
 }
 @media (max-width: 1023px) {
   .swiper-container {
-    height: 40vw;
+    /* height: 40vw; */
   }
   .swiper-container.swiper-container-coverflow {
     padding-top: 0;

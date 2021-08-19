@@ -367,6 +367,11 @@ background-color: transparent;
     margin-top: 0px;
 }
 
+.ace-feature {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
 .faq-page .nav 
 {
   display: block;
@@ -581,7 +586,7 @@ text-align: center;
 
 #progressbar li
 {
-  width: 17%;
+  width: 25%;
 }
 
 .track-bottom p
@@ -733,7 +738,59 @@ text-align: center;
     margin-bottom: 10px !important;
 }
 
+.icon-content {
+  width: 25%;
+  margin-bottom: 10px;
+  margin-top: 10px;
 
+  text-align: -webkit-center;
+  display: block !important;
+}
+.track-status 
+{
+  justify-content: space-evenly;}
+  #progressbar li span 
+{
+  margin-top: 10px;
+    display: block;
+    font-weight: 600;
+}
+#progressbar li:before {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  display: block;
+  font-size: 17px;
+  background: #C5CAE9;
+  border-radius: 50%;
+  margin: auto;
+  padding: 0px;
+}
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 9px;
+  background: #C5CAE9;
+  position: absolute;
+  left: 0;
+  top: 14px;
+  z-index: -1;
+}
+.order-confirm-track h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  margin-left: 15px;
+}
+.order-confirm-track h3 span {
+  font-size: 11px;
+  color: #000;
+}
+.track-div 
+{
+  padding-right: 5px;
+    padding-left: 0px;
+}
 }
 
 
@@ -844,6 +901,11 @@ text-align: center;
  .cart-table .cart-product-price {
   width: 100%;
 }
+.cart-table .cart-product-subtotal
+{
+  width: 100%;
+
+}
 .wishlist-table .cart-product-stock-status {
   width: 100%;
 }
@@ -856,6 +918,17 @@ text-align: center;
     color: #d40029;
     font-size: 16px;
 }
+
+.cart-table td.cart-product-subtotal:before {
+  content: "Subtotal";
+  position: relative;
+  left: -15px;
+  font-weight: bold;
+  color: #000;
+  font-size: 16px;
+}
+
+
 .wishlist-table .cart-product-stock-status:before
 {
   content: "Availability";
