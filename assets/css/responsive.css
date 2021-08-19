@@ -187,10 +187,16 @@ header .nav-icon-right
 {
  display: none;
 }
+.checkout-button-navigation {
+  margin-top: 0px;
+}
 
 }
 @media (min-width: 768px) and (max-width: 990px)
 {
+  .checkout-button-navigation {
+    margin-top: 0px;
+}
   header .nav-icon-right .nav-item
   {
     display: block;
@@ -285,7 +291,9 @@ background-color: transparent;
 }
 @media (min-width: 577px) and (max-width: 767px)
 {
-
+  .checkout-button-navigation {
+    margin-top: 0px;
+}
   header .nav-icon-right .nav-item
   {
     display: block;
@@ -354,6 +362,10 @@ background-color: transparent;
 @media only screen and (max-width: 576px) 
 
 {
+
+  .checkout-button-navigation {
+    margin-top: 0px;
+}
 
 .faq-page .nav 
 {
@@ -498,7 +510,7 @@ header .nav-icon-right .mt5
 .mobile-menu-trigger
 {
   padding: 0px;
-  width: 40%;
+  width: 100%;
 }
 .my-account
 {
@@ -813,6 +825,46 @@ text-align: center;
   display: none !important;
 }
 
+ .your-order-table .qty:before 
+ {
+  content: "Qty";
+  position: relative;
+  left: -15px;
+  font-weight: bold;
+ }
+ .your-order-table .total:before 
+ {
+  content: "Price";
+  position: relative;
+  left: -15px;
+  font-weight: bold;
+  color: #000;
+ }
+
+ .cart-table .cart-product-price {
+  width: 100%;
+}
+.wishlist-table .cart-product-stock-status {
+  width: 100%;
+}
+.cart-table td.cart-product-price:before
+{
+  content: "Price";
+    position: relative;
+    left: -15px;
+    font-weight: bold;
+    color: #d40029;
+    font-size: 16px;
+}
+.wishlist-table .cart-product-stock-status:before
+{
+  content: "Availability";
+  position: relative;
+  left: -15px;
+  font-weight: bold;
+  color: #d40029;
+  font-size: 16px;
+}
 
 }
 

@@ -1993,7 +1993,8 @@ font-weight: 600;
 width: 19.84%;
 }
 .wishlist-table .wishlist-in-stock {
-color: #096e3f;
+color: #11c773;
+    font-weight: 500;
 }
 .wishlist-table .wishlist-action {
 width: 24.19%;
@@ -2001,7 +2002,11 @@ width: 24.19%;
 .wishlist-action a
 {
 color: #fff;
-  height: 40px;
+  height: 35px;
+}
+.wishlist-action a:hover {
+  color: #fff;
+  height: 35px;
 }
 .cart-qty 
 {
@@ -3185,7 +3190,7 @@ float: left;
 .payment-page img
 {
 border: 1px solid #eff2f7;
-  width: 70%;
+  width: 50%;
   box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
   border-radius: 20px;
 }
