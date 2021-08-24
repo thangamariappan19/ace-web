@@ -4124,3 +4124,21 @@ justify-content: space-around;
 {
   color: rgb(51, 48, 48);
 }
+@media screen and (max-width: 600px) {
+  #about-us {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+  #black_pattern {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
