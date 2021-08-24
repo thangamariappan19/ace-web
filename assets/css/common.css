@@ -4142,5 +4142,5 @@ justify-content: space-around;
     display: none;
   }
 }
-@media  screen and (max-width: 780px) { #swiper_container_web { display: none !important; } #swiper_container_mobile { display: block !important; } } 
-@media screen and (min-width: 781px) { #swiper_container_mobile { display: none !important; }#swiper_container_web { display: block !important; }
+@media  screen and (max-width: 780px) { .swiper_container_web { display: none !important; } .swiper_container_mobile { display: block !important; } } 
+@media screen and (min-width: 781px) { .swiper_container_mobile { display: none !important; }.swiper_container_web { display: block !important; }
