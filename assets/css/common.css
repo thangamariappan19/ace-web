@@ -4152,3 +4152,296 @@ justify-content: space-around;
   float: left;
   margin: 10px auto 5px 20px;
   width: 28%; }.swiper_container_web { display: block !important; }
+  #full-search-area {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+  }
+  #full-search-area .searchbar {
+    position: relative;
+      background-color: #fff;
+      width: 100%;
+      height: 45px;
+      padding: 15px 22px;
+      background-clip: padding-box;
+      border: 1px solid #d6dadf;
+  }
+  #full-search-area .searchbar__branding {
+    height: 50px;
+  }
+  #full-search-area .searchbar__text {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    right: 85px;
+    display: inline-block;
+    height: 50px;
+    opacity: 1;
+    transform: translateX(30px);
+    transition: 300ms;
+    transition-delay: 150ms;
+  }
+  #full-search-area .searchbar__text [type="search"] {
+    display: block;
+    color: inherit;
+    border: 0;
+    font-size: 14px;
+    font-weight: 300;
+    height: 40px;
+    width: 100%;
+    padding: 0;
+    padding-right: 30px;
+    -webkit-appearance: none !important;
+       -moz-appearance: none !important;
+            appearance: none !important;
+  }
+  #full-search-area .searchbar__text [type="search"]:focus {
+    outline: 0;
+  }
+  #full-search-area .searchbar__text [type="search"]::-moz-placeholder {
+    color: #000;
+  }
+  #full-search-area .searchbar__text [type="search"]:-ms-input-placeholder {
+    color: #000;
+  }
+  #full-search-area .searchbar__text [type="search"]::placeholder {
+    color: #000;
+  }
+  #full-search-area .searchbar__text.fade-left {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  #full-search-area .searchbar__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 85px;
+    padding-top: 20px;
+    padding-right: 30px;
+  }
+  #full-search-area .searchbar__close button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    color: #cbc4bc;
+    border: 0;
+    background: none;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    transition: 150ms;
+  }
+  #full-search-area .searchbar__close button:hover, #full-search-area .searchbar__close button:focus {
+    color: #796e65;
+  }
+  #full-search-area .results {
+    position: relative;
+    background-color: #fff;
+    margin: 1px auto 0;
+    padding: 30px;
+    width: 100%;
+    /* max-width: 1024px; */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 300ms;
+    border: 1px solid #e5e5e9;
+  }
+  #full-search-area .results.fading {
+    opacity: 1;
+    transform: translateY(0);
+    display: block !important;
+  }
+  
+  .results
+  {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    background: #fff;
+    padding: 30px;
+    margin-top: 30px;
+    border: 1px solid #d40029;
+    
+    border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      width: 100%;
+  }
+  .fading
+  {
+    display: block !important;
+  }
+  
+  #full-search-area .results h3 {
+    color: #cbc4bc;
+    font-size: .75em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  #full-search-area .results ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #full-search-area .results ul li {
+    margin-bottom: 3px;
+  }
+  #full-search-area .results ul li a {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  #full-search-area .results ul li a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #aca39a;
+    width: 100%;
+    height: 1px;
+    margin: 0 auto;
+    opacity: 0.33;
+    transform: scaleX(0.9);
+    transform-origin: left;
+    transition: opacity 150ms, transform 150ms;
+  }
+  #full-search-area .results ul li a:hover, #full-search-area .results ul li a:focus {
+    color: inherit;
+    text-decoration: none;
+  }
+  #full-search-area .results ul li a:hover::after, #full-search-area .results ul li a:focus::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  #full-search-area .results__product figcaption {
+    font-weight: 700;
+    text-align: center;
+  }
+  #full-search-area .results__additional {
+    margin-bottom: 1.5em;
+  }
+  
+  .fade-content > * {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 50ms, transform 300ms;
+  }
+  .fade-content > *:nth-of-type(2) {
+    transition-delay: 50ms;
+  }
+  .fade-content > *:nth-of-type(3) {
+    transition-delay: 100ms;
+  }
+  .fade-content > *:nth-of-type(4) {
+    transition-delay: 150ms;
+  }
+  .fade-content > *:nth-of-type(5) {
+    transition-delay: 200ms;
+  }
+  .fading .fade-content > * {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  #search {
+    color: #aca39a;
+  }
+  #search:hover, #search:focus {
+    color: #796e65;
+  }
+  
+  .results h3 
+  {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #e31836;
+    text-transform: uppercase;
+  }
+  
+  .fade-content ul li 
+  {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  
+  
+  .fade-content ul li a:before {
+    content: "\f101"; 
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: 0.7em;
+    width: 1.3em; 
+  }
+  
+  .search-results-products img
+  {
+    max-width: 80px;
+  }
+  
+  .search-results-products .search-product-thumbnail
+  {
+  text-align: center;
+  border: 1px solid #e7eaf0;
+  margin-bottom: 10px;
+  }
+  
+  .search-title 
+  {
+    margin: 0;
+    font-size: 13px;
+    color: #645858;
+  }
+  
+  .search-price 
+  {
+    margin-top: 5px;
+    background-color: #eeeeee;
+    display: inline-block;
+    padding: 5px;
+    font-size: 11px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 14px !important;
+  }
+  
+  
+  .search-status 
+  {
+    margin-top: 5px;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  
+  .search-status .instock
+  {
+    color: rgb(15 166 15);
+    font-weight: 500;
+  }
+  
+  .search-status .outofstock
+  {
+    color: #e31836;
+    font-weight: 500;
+  }
+  
+  .no-results 
+  {
+    background-color: #eff2f7;
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 13px;
+  }
