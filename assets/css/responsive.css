@@ -297,6 +297,10 @@ background-color: transparent;
     justify-content: space-between;
     margin-bottom: 10px !important;
 }
+.mini-cart-view .btn
+{
+  margin-bottom: 10px;
+}
 
 .results
 {
@@ -378,6 +382,10 @@ background-color: transparent;
 {
   display: block !important;
 }
+.mini-cart-view .btn
+{
+  margin-bottom: 10px;
+}
 }
 @media only screen and (max-width: 576px) 
 
@@ -387,9 +395,22 @@ background-color: transparent;
     margin-top: 0px;
 }
 
+.right-icons-order .nav-item .dropdown-menu
+{
+  width: 330px;
+}
+.mini-cart-view .btn
+{
+  margin-bottom: 10px;
+}
+
 .ace-feature {
   margin-bottom: 15px;
   margin-top: 15px;
+}
+.mini-cart
+{
+  width: auto;
 }
 
 .faq-page .nav 
