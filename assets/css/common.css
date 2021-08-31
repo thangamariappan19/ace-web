@@ -4398,6 +4398,10 @@ justify-content: space-around;
   {
     max-width: 80px;
   }
+  .search-results-products
+  {
+    cursor: pointer;
+  }
   
   .search-results-products .search-product-thumbnail
   {
@@ -4745,7 +4749,7 @@ justify-content: space-around;
 
 .search-view-all .btn-primary 
 {
-  width: 15%;
+  /* width: 15%; */
   background-color: #d40029;
   border-color: #d40029;
   color: #fff !important;

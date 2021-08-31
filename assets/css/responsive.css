@@ -503,6 +503,7 @@ background-color: transparent;
 #full-search-area .searchbar__text [type="search"]
 {
   width: 107%;
+  cursor: pointer;
 }
 
 
