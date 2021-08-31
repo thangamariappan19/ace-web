@@ -196,6 +196,11 @@ header .nav-icon-right
 }
 .msearch-order-2
 {
+  order: 1;
+  margin-top: 10px;
+}
+.msearch-order-1
+{
   order: 2;
   margin-top: 10px;
 }
@@ -308,6 +313,11 @@ background-color: transparent;
 }
 .msearch-order-2
 {
+  order: 1;
+  margin-top: 10px;
+}
+.msearch-order-1
+{
   order: 2;
   margin-top: 10px;
 }
@@ -354,6 +364,7 @@ background-color: transparent;
   {
     order: 2;
   }
+  
   .ace-megamenu
   {
     display: none !important;
@@ -386,10 +397,25 @@ background-color: transparent;
 {
   margin-bottom: 10px;
 }
+
+.msearch-order-1
+{
+  order: 1;
+}
+
+.msearch-order-2
+{
+  order: 2;
+}
+
+
 }
 @media only screen and (max-width: 576px) 
 
 {
+
+
+
 
   .checkout-button-navigation {
     margin-top: 0px;
@@ -446,9 +472,14 @@ background-color: transparent;
   order: 2;
 }
 
-.msearch-order-2
+.msearch-order-1
 {
   order: 1;
+}
+
+.msearch-order-2
+{
+  order: 2;
 }
 .search-results-products img {
   
@@ -590,8 +621,8 @@ header .nav-icon-right .mt5
 }
 .mobile-menu-trigger
 {
-  padding: 0px;
-  width: 100%;
+  padding: 5px;
+  width: 50%;
 }
 .my-account
 {
