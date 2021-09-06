@@ -4532,16 +4532,17 @@ justify-content: space-around;
   }
   
   
-  @media (max-width: 992px)
+  @media (min-width: 800px)
   {
-    /* .right-icons-order .nav-item .dropdown-menu {
-      margin-top: 2px;
-      margin-left: 55px;
-      width: 250px;
-      left: -250px !important;
-      border-top: solid 5px; */
+    #search_view_mobile {
+      visibility: hidden !important;
+      
+    
+      margin-left: 6em !important;
+      display: none !important;
+    }
   }
-  }
+  
   
    .mini-cart-container {
     margin: auto;
