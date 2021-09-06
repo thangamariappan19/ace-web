@@ -506,9 +506,10 @@ padding: 0px 0px;
 .dropdown .dropdown-menu {
   transition: all 0.8s;
   overflow: hidden;
-  transform-origin: top center;
+  transform-origin: top right;
   transform: scale(1, 0);
   display: block;
+  height: max-content;
 }
 
 .navbar .nav-item.dropdown:hover .dropdown-menu {
@@ -516,8 +517,8 @@ padding: 0px 0px;
  visibility: visible;
  opacity: 1;
  transform: scale(1);
- height: 430px;
- overflow-y: scroll;
+ /* height: 430px;
+ overflow-y: scroll; */
  /* transition: visibility 0s, opacity 0.3s linear; */
  
 }
@@ -3213,6 +3214,8 @@ border-radius: 25px;}
 {
 max-width: 500px;
 max-height: 469px;
+/* display: block; */
+width: 100%;
 }
 
 .offer-tag 
