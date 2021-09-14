@@ -21,9 +21,6 @@ a:focus {
   color: #000;
   text-decoration: none;
 }
-.content {
-  /* margin: 50px 100px 0px 100px; */
-}
 
 .exo-menu {
   width: 100%;
@@ -5045,4 +5042,7 @@ justify-content: space-around;
     }
     .search_scroll_space {
       left: 1em;
+    }
+    .iconbox_btn {
+      height: 400px !important;
     }
