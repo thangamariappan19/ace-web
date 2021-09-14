@@ -3695,6 +3695,7 @@ header .nav-icon-right .nav-item .wishlist {
     margin-left: 5px;
     /* margin-top: 2px; */
     text-align: center;
+    cursor: pointer;
 }
 .modal-dialog {
   max-width: 800px !important;
