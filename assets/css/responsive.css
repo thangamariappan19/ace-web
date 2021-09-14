@@ -204,6 +204,10 @@ header .nav-icon-right
   order: 2;
   margin-top: 10px;
 }
+.brand-wrap .logo, .navbar-brand .logo
+{
+  width: 110px !important;
+}
 
 
 }
@@ -310,6 +314,7 @@ background-color: transparent;
 .results
 {
   left: 0;
+  margin-top: 0px;
 }
 .msearch-order-2
 {
@@ -321,10 +326,23 @@ background-color: transparent;
   order: 2;
   margin-top: 10px;
 }
+.brand-wrap .logo, .navbar-brand .logo
+{
+  /* width: 110px !important; */
+}
 
 }
 @media (min-width: 577px) and (max-width: 767px)
+
 {
+
+  .results
+  {
+    margin-top: 0px;
+    left: 0;
+  }
+
+
   .checkout-button-navigation {
     margin-top: 0px;
 }

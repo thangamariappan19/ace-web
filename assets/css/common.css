@@ -2841,7 +2841,8 @@ color: #000 !important;
 float: right;
   font-size: 10px;
   position: relative;
-  top: 10px;
+  top: 5px;
+    left: -10px;
 }
 
 .mega-parent{
@@ -4275,7 +4276,7 @@ justify-content: space-around;
     z-index: 9999;
     background: #fff;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: -20px;
     border: 1px solid #d40029;
     
     border-bottom-right-radius: 30px;
@@ -4992,9 +4993,9 @@ justify-content: space-around;
     }
 
     @media (max-width: 1200px) {
-      .btn {
+      /* .btn {
         padding: 0px;
-      }
+      } */
 
       .card-product-list .info-aside {
         padding: 0px;

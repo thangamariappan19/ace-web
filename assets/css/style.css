@@ -2758,8 +2758,18 @@ h3 {
 }
 
 .slick-slide {
-  float: right !important;
+  float: left !important;
 }
+
+.slick-track{ margin-left: 0; }
+
+.slick-related-search 
+{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
 .product-category .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #d40029 !important;
@@ -4583,4 +4593,185 @@ heart icon */
 }
 .category-title {
   padding: 10px;
+}
+
+
+/* new menu */
+
+.meganav.nav,
+.meganav .nav a,
+.meganav .nav ul,
+.meganav .nav li,
+.meganav .nav div,
+.meganav .nav form,
+.meganav .nav input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+ 
+.meganav .nav a { text-decoration: none; }
+ 
+.meganav .nav li { list-style: none; }
+
+
+/* Menu Container */
+.meganav .nav {
+    display: inline-block;
+    position: relative;
+    cursor: default;
+    z-index: 500;
+    width:100%;
+}
+ 
+/* Menu List */
+.meganav .nav > li {
+    display: block;
+    float: left;
+}
+
+
+/* Menu Links */
+.meganav .nav > li > a {
+    position: relative;
+    display: block;
+    z-index: 510;
+    height: 54px;
+    padding: 0 20px;
+    line-height: 54px;
+    font-size: 16px;
+    color: #1f2d3d ;
+    text-shadow: 0 0 1px rgba(0,0,0,.35);
+ 
+    /* background: #372f2b;
+    border-left: 1px solid #4b4441;
+    border-right: 1px solid #312a27; */
+ 
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+
+.meganav .nav > li:hover > a { color:#e31836; }
+ 
+.meganav .nav > li:first-child > a {
+    border-radius: 3px 0 0 3px;
+    border-left: none;
+}
+
+/* Search Form */
+.meganav .nav > li.nav-search > form {
+    position: relative;
+    width: inherit;
+    height: 54px;
+    z-index: 510;
+    border-left: 1px solid #4b4441;
+}
+
+.meganav .nav > li.nav-search input[type="text"] {
+    display: block;
+    float: left;
+    width: 1px;
+    height: 24px;
+    padding: 15px 0;
+    line-height: 24px;
+ 
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #999999;
+    text-shadow: 0 0 1px rgba(0,0,0,.35);
+ 
+    background: #372f2b;
+ 
+    -webkit-transition: all .3s ease 1s;
+    -moz-transition: all .3s ease 1s;
+    -o-transition: all .3s ease 1s;
+    -ms-transition: all .3s ease 1s;
+    transition: all .3s ease 1s;
+}
+ 
+.meganav .nav > li.nav-search input[type="text"]:focus { color: #fcfcfc; }
+ 
+.meganav .nav > li.nav-search input[type="text"]:focus,
+.meganav .nav > li.nav-search:hover input[type="text"] {
+    width: 110px;
+    padding: 15px 20px;
+ 
+    -webkit-transition: all .3s ease .1s;
+    -moz-transition: all .3s ease .1s;
+    -o-transition: all .3s ease .1s;
+    -ms-transition: all .3s ease .1s;
+    transition: all .3s ease .1s;
+	}
+	
+	
+	.meganav .nav > li.nav-search input[type="submit"] {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 54px;
+    padding: 0 25px;
+    cursor: pointer;
+ 
+    background: #372f2b url(../img/search-icon.png) no-repeat center center;
+ 
+    border-radius: 0 3px 3px 0;
+ 
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+ 
+.meganav .nav > li.nav-search input[type="submit"]:hover { background-color: #4b4441; }
+
+
+.meganav .nav > li > div {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 57px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 0 0 3px 3px;
+  -webkit-transition: all .3s ease .15s;
+  -moz-transition: all .3s ease .15s;
+  -o-transition: all .3s ease .15s;
+  -ms-transition: all .3s ease .15s;
+  transition: all .3s ease .15s;
+  border: 1px solid #eff2f7;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+}
+
+
+.meganav .nav > li:hover > div {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+}
+
+
+.meganav .nav .container-fluid {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding: 20px !important;
+}
+
+.meganav .nav li ul li{
+  list-style: none;
+  padding: 5px;
+}
+
+.about-bg 
+{
+  width: 100%;
 }
