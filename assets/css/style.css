@@ -4611,7 +4611,7 @@ heart icon */
     outline: none;
 }
  
-.meganav .nav a { text-decoration: none; }
+.meganav .nav a { text-decoration: none; font-size: 13px;}
  
 .meganav .nav li { list-style: none; }
 

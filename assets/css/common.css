@@ -2804,13 +2804,14 @@ transition: width .3s;
 
 
 .mega-container > ul > li::after {
-content: '';
-display: block;
-width: 0;
-height: 2px;
-background: #000;
-transition: width .3s;
-margin-top: 5px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #ececec;
+  transition: width .3s;
+  margin-top: 4px;
+
 }
 
 .mega-container > ul > li:hover::after {
@@ -2835,11 +2836,12 @@ color: #000 !important;
 
 .mega-container .fa-chevron-right 
 {
-float: right;
+  float: right;
   font-size: 10px;
   position: relative;
   top: 5px;
-    left: -10px;
+  left: -10px;
+  color: #bebfc3;
 }
 
 .mega-parent{
