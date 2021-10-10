@@ -2804,14 +2804,13 @@ transition: width .3s;
 
 
 .mega-container > ul > li::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 1px;
-  background: #ececec;
-  transition: width .3s;
-  margin-top: 4px;
-
+content: '';
+display: block;
+width: 0;
+height: 2px;
+background: #000;
+transition: width .3s;
+margin-top: 5px;
 }
 
 .mega-container > ul > li:hover::after {
@@ -2836,12 +2835,10 @@ color: #000 !important;
 
 .mega-container .fa-chevron-right 
 {
-  float: right;
+float: right;
   font-size: 10px;
   position: relative;
-  top: 5px;
-  left: -10px;
-  color: #bebfc3;
+  top: 10px;
 }
 
 .mega-parent{
@@ -4275,7 +4272,7 @@ justify-content: space-around;
     z-index: 9999;
     background: #fff;
     padding: 20px;
-    margin-top: -20px;
+    margin-top: 30px;
     border: 1px solid #d40029;
     
     border-bottom-right-radius: 30px;
@@ -4992,9 +4989,9 @@ justify-content: space-around;
     }
 
     @media (max-width: 1200px) {
-      /* .btn {
+      .btn {
         padding: 0px;
-      } */
+      }
 
       .card-product-list .info-aside {
         padding: 0px;
