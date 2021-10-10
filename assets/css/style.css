@@ -2,13 +2,12 @@
 /********** General CSS ***********/
 /**********************************/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap");
 
 body {
   color: #353535;
   /* font-family: "Roboto Slab Serif"; */
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   background: #fff;
   overflow-x: hidden;
@@ -27,28 +26,25 @@ a:focus {
 }
 
 h1 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 
   font-weight: 900;
 }
 
 h4 {
-  font-family: 'Roboto Slab', serif;
-
+  font-family: "Roboto Slab", serif;
 }
 
 h3 {
-  font-family: 'Roboto Slab', serif;
-
+  font-family: "Roboto Slab", serif;
 }
 
 h5 {
-  font-family: 'Roboto Slab', serif;
-
+  font-family: "Roboto Slab", serif;
 }
 
 h2 {
-    font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 
   font-weight: 700;
 }
@@ -699,11 +695,11 @@ h2 {
 }
 
 .breadcrumb-wrap .breadcrumb {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    font-size: 15px;
-    margin-left: 16px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-size: 15px;
+  margin-left: 16px;
 }
 
 /**********************************/
@@ -1971,9 +1967,9 @@ h2 {
 /**********************************/
 .my-account {
   position: relative;
-    padding: 30px 0;
-    margin-top: 10px;
-    margin-bottom: 40px;
+  padding: 30px 0;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 .my-account .nav.nav-pills .nav-link {
@@ -1993,8 +1989,8 @@ h2 {
 .my-account .nav.nav-pills .nav-link:hover,
 .my-account .nav.nav-pills .nav-link.active {
   color: #d40029 !important;
-    background: #eff2f7;
-    border-bottom: 1px solid #d40029;
+  background: #eff2f7;
+  border-bottom: 1px solid #d40029;
 }
 
 .my-account .nav.nav-pills .nav-link i {
@@ -2628,7 +2624,7 @@ h3 {
 
 .tab-pane h4 {
   font-weight: 500;
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .cart-btn button:first-child {
@@ -2761,14 +2757,14 @@ h3 {
   float: left !important;
 }
 
-.slick-track{ margin-left: 0; }
+.slick-track {
+  margin-left: 0;
+}
 
-.slick-related-search 
-{
+.slick-related-search {
   padding-right: 15px;
   padding-left: 15px;
 }
-
 
 .product-category .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -2948,7 +2944,6 @@ h3 {
   /* background-color: #eff2f7; */
 }
 
-
 .service-image {
   float: left;
   color: #d40029;
@@ -3027,15 +3022,13 @@ h3 {
   padding: 38px;
 }
 
-.serv-image img 
-{
+.serv-image img {
   /* border: 4px solid #f5f5f5;
   padding: 10px;
   border-radius: 50%;
   width: 70px;
   background-color: white; */
 }
-
 
 .black-pattern p {
   color: #fff;
@@ -3045,11 +3038,11 @@ h3 {
 }
 .box-gray {
   background-color: #1d1c1c;
-  height:210px;
+  height: 210px;
 }
 .box-black {
   background-color: #000;
-  height:200px;
+  height: 200px;
 }
 .black-pattern .third-element {
   background: #1d1b1b;
@@ -3096,8 +3089,7 @@ h3 {
   border-radius: 25px;
   transition: 1s;
 }
-.category-box:hover
-{
+.category-box:hover {
   background-color: #eff2f7;
 }
 
@@ -3108,7 +3100,7 @@ h3 {
 
 section {
   margin-bottom: 30px;
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .product-detail-spec {
@@ -3141,10 +3133,10 @@ section {
 }
 .related-search {
   background: #d40029;
-    color: #fff;
-    padding: 10px;
-    font-size: 18px;
-    border-radius: 6px;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 6px;
 }
 
 .bottom-bar .search-box {
@@ -3204,7 +3196,7 @@ section {
 #footer .footer-top h4 {
   font-size: 17px;
   font-weight: bold;
-  color:#060606;
+  color: #060606;
   position: relative;
   padding-bottom: 12px;
   text-transform: uppercase;
@@ -3295,7 +3287,7 @@ section {
 .card-body .fa-star {
   /* color: #d40029; */
   color: #e6b037;
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .remove-img {
@@ -3316,14 +3308,12 @@ section {
   margin-bottom: 33px;
   border-radius: 0px;
   transition: 1s;
-  
 }
 
 .services-list .icon-box:hover {
   background-color: #eff2f7;
   border: 1px solid #d40029;
 }
-
 
 .services-list .icon {
   position: absolute;
@@ -3566,28 +3556,25 @@ header {
   
 } */
 header .nav-icon-right {
-  justify-content: flex-end;  /* width: 291px; */
+  justify-content: flex-end; /* width: 291px; */
   padding: 0;
 }
-header .nav-icon-right .mt5
-{
+header .nav-icon-right .mt5 {
   margin-top: 5px;
 }
 
-header .nav-icon-right .nav-item 
-{
+header .nav-icon-right .nav-item {
   margin-right: 30px;
 }
-.cart-badge 
-{
+.cart-badge {
   position: absolute;
-    top: -10px;
-    background-color: #e31836;
-    color: #fff;
-    padding: 2px 6px 2px 6px;
-    font-size: 13px;
-    right: -1px;
-    border-radius: 5px;
+  top: -10px;
+  background-color: #e31836;
+  color: #fff;
+  padding: 2px 6px 2px 6px;
+  font-size: 13px;
+  right: -1px;
+  border-radius: 5px;
 }
 
 header .nav-icon-right .nav-item .stores {
@@ -3692,20 +3679,20 @@ header .nav-icon-right .nav-item .wishlist {
 }
 .c-ico {
   background: #eeeeee;
-    /* width: 40px; */
-    /* height: 30px; */
-    margin-right: 6px !important;
-    padding: 10px 20px 10px 9px;
-    /* line-height: 30px;*/
+  /* width: 40px; */
+  /* height: 30px; */
+  margin-right: 6px !important;
+  padding: 10px 20px 10px 9px;
+  /* line-height: 30px;*/
 }
 
 .c-ico i {
   font-size: 20px;
-    color: #9a9696;
-    margin-left: 5px;
-    /* margin-top: 2px; */
-    text-align: center;
-    cursor: pointer;
+  color: #9a9696;
+  margin-left: 5px;
+  /* margin-top: 2px; */
+  text-align: center;
+  cursor: pointer;
 }
 .modal-dialog {
   max-width: 800px !important;
@@ -3828,7 +3815,7 @@ textarea {
   /* min-width: 400px;
   min-height: 200px; */
   padding: 2rem 2rem !important;
-  
+
   background-color: white;
 }
 .login-box a {
@@ -4595,7 +4582,6 @@ heart icon */
   padding: 10px;
 }
 
-
 /* new menu */
 
 .meganav.nav,
@@ -4605,132 +4591,138 @@ heart icon */
 .meganav .nav div,
 .meganav .nav form,
 .meganav .nav input {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
 }
- 
-.meganav .nav a { text-decoration: none; font-size: 13px;}
- 
-.meganav .nav li { list-style: none; }
 
+.meganav .nav a {
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.meganav .nav li {
+  list-style: none;
+}
 
 /* Menu Container */
 .meganav .nav {
-    display: inline-block;
-    position: relative;
-    cursor: default;
-    z-index: 500;
-    width:100%;
-}
- 
-/* Menu List */
-.meganav .nav > li {
-    display: block;
-    float: left;
+  display: inline-block;
+  position: relative;
+  cursor: default;
+  z-index: 500;
+  width: 100%;
 }
 
+/* Menu List */
+.meganav .nav > li {
+  display: block;
+  float: left;
+}
 
 /* Menu Links */
 .meganav .nav > li > a {
-    position: relative;
-    display: block;
-    z-index: 510;
-    height: 54px;
-    padding: 0 20px;
-    line-height: 54px;
-    font-size: 16px;
-    color: #1f2d3d ;
-    text-shadow: 0 0 1px rgba(0,0,0,.35);
- 
-    /* background: #372f2b;
+  position: relative;
+  display: block;
+  z-index: 510;
+  height: 54px;
+  padding: 0 20px;
+  line-height: 54px;
+  font-size: 16px;
+  color: #1f2d3d;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+
+  /* background: #372f2b;
     border-left: 1px solid #4b4441;
     border-right: 1px solid #312a27; */
- 
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    transition: all .3s ease;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
+.meganav .nav > li:hover > a {
+  color: #e31836;
+}
 
-.meganav .nav > li:hover > a { color:#e31836; }
- 
 .meganav .nav > li:first-child > a {
-    border-radius: 3px 0 0 3px;
-    border-left: none;
+  border-radius: 3px 0 0 3px;
+  border-left: none;
 }
 
 /* Search Form */
 .meganav .nav > li.nav-search > form {
-    position: relative;
-    width: inherit;
-    height: 54px;
-    z-index: 510;
-    border-left: 1px solid #4b4441;
+  position: relative;
+  width: inherit;
+  height: 54px;
+  z-index: 510;
+  border-left: 1px solid #4b4441;
 }
 
 .meganav .nav > li.nav-search input[type="text"] {
-    display: block;
-    float: left;
-    width: 1px;
-    height: 24px;
-    padding: 15px 0;
-    line-height: 24px;
- 
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-    color: #999999;
-    text-shadow: 0 0 1px rgba(0,0,0,.35);
- 
-    background: #372f2b;
- 
-    -webkit-transition: all .3s ease 1s;
-    -moz-transition: all .3s ease 1s;
-    -o-transition: all .3s ease 1s;
-    -ms-transition: all .3s ease 1s;
-    transition: all .3s ease 1s;
+  display: block;
+  float: left;
+  width: 1px;
+  height: 24px;
+  padding: 15px 0;
+  line-height: 24px;
+
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #999999;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+
+  background: #372f2b;
+
+  -webkit-transition: all 0.3s ease 1s;
+  -moz-transition: all 0.3s ease 1s;
+  -o-transition: all 0.3s ease 1s;
+  -ms-transition: all 0.3s ease 1s;
+  transition: all 0.3s ease 1s;
 }
- 
-.meganav .nav > li.nav-search input[type="text"]:focus { color: #fcfcfc; }
- 
+
+.meganav .nav > li.nav-search input[type="text"]:focus {
+  color: #fcfcfc;
+}
+
 .meganav .nav > li.nav-search input[type="text"]:focus,
 .meganav .nav > li.nav-search:hover input[type="text"] {
-    width: 110px;
-    padding: 15px 20px;
- 
-    -webkit-transition: all .3s ease .1s;
-    -moz-transition: all .3s ease .1s;
-    -o-transition: all .3s ease .1s;
-    -ms-transition: all .3s ease .1s;
-    transition: all .3s ease .1s;
-	}
-	
-	
-	.meganav .nav > li.nav-search input[type="submit"] {
-    display: block;
-    float: left;
-    width: 20px;
-    height: 54px;
-    padding: 0 25px;
-    cursor: pointer;
- 
-    background: #372f2b url(../img/search-icon.png) no-repeat center center;
- 
-    border-radius: 0 3px 3px 0;
- 
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    transition: all .3s ease;
-}
- 
-.meganav .nav > li.nav-search input[type="submit"]:hover { background-color: #4b4441; }
+  width: 110px;
+  padding: 15px 20px;
 
+  -webkit-transition: all 0.3s ease 0.1s;
+  -moz-transition: all 0.3s ease 0.1s;
+  -o-transition: all 0.3s ease 0.1s;
+  -ms-transition: all 0.3s ease 0.1s;
+  transition: all 0.3s ease 0.1s;
+}
+
+.meganav .nav > li.nav-search input[type="submit"] {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 54px;
+  padding: 0 25px;
+  cursor: pointer;
+
+  background: #372f2b url(../img/search-icon.png) no-repeat center center;
+
+  border-radius: 0 3px 3px 0;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.meganav .nav > li.nav-search input[type="submit"]:hover {
+  background-color: #4b4441;
+}
 
 .meganav .nav > li > div {
   position: absolute;
@@ -4743,22 +4735,20 @@ heart icon */
   overflow: hidden;
   background: #ffffff;
   border-radius: 0 0 3px 3px;
-  -webkit-transition: all .3s ease .15s;
-  -moz-transition: all .3s ease .15s;
-  -o-transition: all .3s ease .15s;
-  -ms-transition: all .3s ease .15s;
-  transition: all .3s ease .15s;
+  -webkit-transition: all 0.3s ease 0.15s;
+  -moz-transition: all 0.3s ease 0.15s;
+  -o-transition: all 0.3s ease 0.15s;
+  -ms-transition: all 0.3s ease 0.15s;
+  transition: all 0.3s ease 0.15s;
   border: 1px solid #eff2f7;
   box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
 }
 
-
 .meganav .nav > li:hover > div {
-    opacity: 1;
-    visibility: visible;
-    overflow: visible;
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
 }
-
 
 .meganav .nav .container-fluid {
   padding-left: 20px !important;
@@ -4766,12 +4756,11 @@ heart icon */
   padding: 20px !important;
 }
 
-.meganav .nav li ul li{
+.meganav .nav li ul li {
   list-style: none;
   padding: 5px;
 }
 
-.about-bg 
-{
+.about-bg {
   width: 100%;
 }
