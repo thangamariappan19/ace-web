@@ -38,40 +38,9 @@
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <link href="assets/css/checkout.css" rel="stylesheet" />
     <style>
+      [dir='rtl'] .slick-slide { float: left !important; }
 
 
-.amega-dropdown {
-  position: static !important;
-}
-.amega-dropdown-menu {
-    padding: 20px 0px;
-    width: 100%;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-.amega-dropdown-menu > li > ul {
-  padding: 0;
-  margin: 0;
-}
-.amega-dropdown-menu > li > ul > li {
-  list-style: none;
-}
-.amega-dropdown-menu > li > ul > li > a {
-  display: block;
-  color: #222;
-  padding: 3px 5px;
-}
-.amega-dropdown-menu > li ul > li > a:hover,
-.amega-dropdown-menu > li ul > li > a:focus {
-  text-decoration: none;
-}
-.amega-dropdown-menu .dropdown-header {
-  font-size: 18px;
-  color: #ff3546;
-  padding: 5px 60px 5px 5px;
-  line-height: 30px;
-}
-      
     </style>
      
   </head>
@@ -556,158 +525,244 @@
 
     <!-- Megamenu -->
 
-    <section class="meganav container-fluid navbar navbar-expand-lg navbar-dark ace-megamenu d-none d-md-block d-lg-block d-sm-block d-xl-block">
-    <ul class="nav">
-      <li>
-          <a href="#"><img src="assets/img/categories.png" class="img-fluid nav-image" alt=""> Shop By Category</a>
-          
-            
-
-               <!-- Content -->
-
-               <div class="container-fluid">
-                  
+    <header class="meganav container-fluid navbar navbar-expand-lg navbar-dark ace-megamenu d-none d-md-block d-lg-block d-sm-block d-xl-block">
+      <ul class="nav">
   
-               <div class="mega-container">   
-                     
-                <ul class="">
+        <li>
+          <nav id="main-nav">
     
-                    <li class="mega-parent" id="ss">
-                        <a tabindex="-1" href="#">Dubai Summer Surprise <i class="fa fa-chevron-right"></i></a>
-                        <ul class="">
-    
-                           
-                            <li class="">
-                                <a href="#">Electronic & Appliances <i class="fa fa-chevron-right"></i></a>
-                                <ul class="parent">
-                                    <li >
-                                        <a href="#">Electronic & Appliances<i class="fa fa-chevron-right"></i> </a>
-
-                                        <ul class="parent">
-                                          <li><a href="#">four</a></li>
-                                          <li><a href="#">four</a></li>
-
-                                        </ul>
-    
-                                    </li>
-                                    <li ><a href="#">Blender & Juicers</a></li>
-                                    <li ><a href="#">Gardens</a></li>
-                                    <li ><a href="#">Chest freezers</a></li>
-                                    <li ><a href="#">Refrigerators</a></li>
-                                    <li ><a href="#">Outdoor coolings</a></li>
-                                    <li ><a href="#">Refrigerators</a></li>
-                                    <li ><a href="#">Airconditioers</a></li>
-                                    <li ><a href="#">Blender & Juicers</a></li>
-                                    <li ><a href="#">Gardens</a></li>
-                                    <li ><a href="#">Chest freezers</a></li>
-                                    <li ><a href="#">Refrigerators</a></li>
-                                    <li ><a href="#">Outdoor coolings</a></li>
-                                    <li ><a href="#">Refrigerators</a></li>
-                                    <li ><a href="#">Airconditioers</a></li>
-                                    <li ><a href="#">Blender & Juicers</a></li>
-                                    <li ><a href="#">Gardens</a></li>
-                                    <li ><a href="#">Chest freezers</a></li>
-                                    <li ><a href="#">Refrigerators</a></li>
-                                    <li ><a href="#">Outdoor coolings</a></li>
-                                    <li ><a href="#">Refrigerators</a></li>
-                                    <li ><a href="#">Airconditioers</a></li>
-
-                                </ul>
-                            </li>
-                            <li class=""><a href="#">Automotive</a></li>
-                            <li class=""><a href="#">Paints</a></li>
-                            <li class=""><a href="#">Pet care Essentials</a></li>
-                            <li class=""><a href="#">Cleaning & Home Essentials</a></li>
-                            <li class=""><a href="#">Tous & Stationaries</a></li>
-                            <li class=""><a href="#">All DSS Offers</a></li>
-                            <li class=""><a href="#">Pet care Essentials</a></li>
-                            <li class=""><a href="#">Cleaning & Home Essentials</a></li>
-                            <li class=""><a href="#">Tous & Stationaries</a></li>
-                            <li class=""><a href="#">All DSS Offers</a></li>
-
+                                
+            <ul class="">
+       
+                <li>
+                <a href="#">Dubai Summer Surprise</a>
+                    <ul>
+                      <li>
+                        <a href="#">Electronics & Appliances</a>
+                        <ul>
+                          <li>
+                            <a href="#">Electronics</a>
+                            <ul>
+                              <li><a href="#">Fan</a></li>
+                              <li><a href="#">Refrigerators</a></li>
+                              
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">Appliances</a>
+                            <ul>
+                              <li><a href="#">Fans</a></li>
+                              <li><a href="#">Grinders</a></li>
+                              <li><a href="#">Televisions</a></li>
+                            </ul>
+                          </li>
                         </ul>
-                    </li>
-                    <li class="mega-parent" id="se">
-                      <a tabindex="-1" href="#">Summer Essentials <i class="fa fa-chevron-right"></i></a>
-                        <ul class="">
-                            <li class=""><a href="#">Air Coolers</a></li>
-                            <li class=""><a href="#">Outdoor Cooling</a></li>
-                            <li class=""><a href="#">Summer Pools</a></li>
-                            <li class=""><a href="#">Cooling Offers</a></li>
-                            <li class=""><a href="#">Chest Freezers</a></li>
-
-                          
+                      </li>
+                      <li>
+                        <a href="#">Extra menu</a>
+                      </li>
+                    
+                    </ul>
+              </li>
+  
+              <li>
+                <a href="#">Online Exclusive</a>
+                    <ul>
+                      <li>
+                        <a href="#">2 Online exclusive</a>
+                        <ul>
+                          <li>
+                            <a href="#">3 online exclusive</a>
+                            <ul>
+                              <li><a href="#">Items</a></li>
+                              <li><a href="#">Item</a></li>
+                              
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">Sub third</a>
+                            <ul>
+                              <li><a href="#">Items</a></li>
+                              <li><a href="#">Items</a></li>
+                              <li><a href="#">Items</a></li>
+                            </ul>
+                          </li>
                         </ul>
-                    </li>
-                    <li ><a href="#">DIY Tools</a></li>
-                    <li ><a href="#">Car Cares</a></li>
-                    <li ><a href="#">Homeware & Furniture</a></li>
-                    <li ><a href="#">Car Care</a></li>
-                    <li ><a href="#">Painting & Decorating</a></li>
-                    <li ><a href="#">Pets</a></li>
-                    <li ><a href="#">Drive thru range</a></li>
-                    <li ><a href="#">DIY Tools</a></li>
-                    <li ><a href="#">Car Cares</a></li>
-                    <li ><a href="#">Homeware & Furniture</a></li>
-                    <li ><a href="#">Car Care</a></li>
-                    <li ><a href="#">Painting & Decorating</a></li>
-                    <li ><a href="#">Pets</a></li>
-                    <li ><a href="#">Drive thru range</a></li>
-                    <li ><a href="#">DIY Tools</a></li>
-                    <li ><a href="#">Car Cares</a></li>
-                    <li ><a href="#">Homeware & Furniture</a></li>
-                    <li ><a href="#">Car Care</a></li>
-                    <li ><a href="#">Painting & Decorating</a></li>
-                    <li ><a href="#">Pets</a></li>
-                    <li ><a href="#">Drive thru range</a></li>
-
-
-                </ul>
-               
-                <div class="menu-category-image">
-                <div class="mega-catimg" id="divss">
-                  <img src="assets/img/Ace-Web_53.png" alt="Manager" class="img-responsive"/>
-                  <hr>
-                  <button class="btn btn-success">Shop Now</button>
-                </div>
-                <div class="mega-catimg" id="divse">
-                  <img src="assets/img/Ace-Web_56.png" alt="HR" class="img-responsive"/>
-                  <hr>
-                  <button class="btn btn-success">Shop Now</button>
-
-                </div>
-                </div>
-               </div>
-
-               
-               </div>
-
-               <!-- Content  -->
-
-
+                      </li>
+                      <li>
+                        <a href="#">Extra menu</a>
+                      </li>
+                    
+                    </ul>
+              </li>
+  
+  
+  
+             
+            </ul>
           
-      </li>
-      <li>
-          <a href="#"><img src="assets/img/categories.png" class="img-fluid nav-image" alt=""> Shop By Ace</a>
+          </nav>
+  
+          <a class="toggle" href="#">
+              <span></span>
+          </a>
+  
+  
+        </li>
+  
+  
+        <li>
+            <a href="#">Menu</a>
             
-              <!-- Content -->
-
-              <div class="container-fluid">
-
-                  Menu
               
-             </div>
-
-             <!-- Content  -->
-
-
-
-      </li>
+  
+                 <!-- Content -->
+  
+                 <!-- <div class="container-fluid">
+                    
+    
+                 <div class="mega-container">   
+                       
+                  <ul class="">
+      
+                      <li class="mega-parent" id="ss">
+                          <a tabindex="-1" href="#">Dubai Summer Surprise <i class="fa fa-chevron-right"></i></a>
+                          <ul class="">
+      
+                             
+                              <li class="">
+                                  <a href="#">Electronic & Appliances <i class="fa fa-chevron-right"></i></a>
+                                  <ul class="parent">
+                                      <li >
+                                          <a href="#">Electronic & Appliances<i class="fa fa-chevron-right"></i> </a>
+  
+                                          <ul class="parent">
+                                            <li><a href="#">four</a></li>
+                                            <li><a href="#">four</a></li>
+  
+                                          </ul>
+      
+                                      </li>
+                                      <li ><a href="#">Blender & Juicers</a></li>
+                                      <li ><a href="#">Gardens</a></li>
+                                      <li ><a href="#">Chest freezers</a></li>
+                                      <li ><a href="#">Refrigerators</a></li>
+                                      <li ><a href="#">Outdoor coolings</a></li>
+                                      <li ><a href="#">Refrigerators</a></li>
+                                      <li ><a href="#">Airconditioers</a></li>
+                                      <li ><a href="#">Blender & Juicers</a></li>
+                                      <li ><a href="#">Gardens</a></li>
+                                      <li ><a href="#">Chest freezers</a></li>
+                                      <li ><a href="#">Refrigerators</a></li>
+                                      <li ><a href="#">Outdoor coolings</a></li>
+                                      <li ><a href="#">Refrigerators</a></li>
+                                      <li ><a href="#">Airconditioers</a></li>
+                                      <li ><a href="#">Blender & Juicers</a></li>
+                                      <li ><a href="#">Gardens</a></li>
+                                      <li ><a href="#">Chest freezers</a></li>
+                                      <li ><a href="#">Refrigerators</a></li>
+                                      <li ><a href="#">Outdoor coolings</a></li>
+                                      <li ><a href="#">Refrigerators</a></li>
+                                      <li ><a href="#">Airconditioers</a></li>
+  
+                                  </ul>
+                              </li>
+                              <li class=""><a href="#">Automotive</a></li>
+                              <li class=""><a href="#">Paints</a></li>
+                              <li class=""><a href="#">Pet care Essentials</a></li>
+                              <li class=""><a href="#">Cleaning & Home Essentials</a></li>
+                              <li class=""><a href="#">Tous & Stationaries</a></li>
+                              <li class=""><a href="#">All DSS Offers</a></li>
+                              <li class=""><a href="#">Pet care Essentials</a></li>
+                              <li class=""><a href="#">Cleaning & Home Essentials</a></li>
+                              <li class=""><a href="#">Tous & Stationaries</a></li>
+                              <li class=""><a href="#">All DSS Offers</a></li>
+  
+                          </ul>
+                      </li>
+                      <li class="mega-parent" id="se">
+                        <a tabindex="-1" href="#">Summer Essentials <i class="fa fa-chevron-right"></i></a>
+                          <ul class="">
+                              <li class=""><a href="#">Air Coolers</a></li>
+                              <li class=""><a href="#">Outdoor Cooling</a></li>
+                              <li class=""><a href="#">Summer Pools</a></li>
+                              <li class=""><a href="#">Cooling Offers</a></li>
+                              <li class=""><a href="#">Chest Freezers</a></li>
+  
+                            
+                          </ul>
+                      </li>
+                      <li ><a href="#">DIY Tools</a></li>
+                      <li ><a href="#">Car Cares</a></li>
+                      <li ><a href="#">Homeware & Furniture</a></li>
+                      <li ><a href="#">Car Care</a></li>
+                      <li ><a href="#">Painting & Decorating</a></li>
+                      <li ><a href="#">Pets</a></li>
+                      <li ><a href="#">Drive thru range</a></li>
+                      <li ><a href="#">DIY Tools</a></li>
+                      <li ><a href="#">Car Cares</a></li>
+                      <li ><a href="#">Homeware & Furniture</a></li>
+                      <li ><a href="#">Car Care</a></li>
+                      <li ><a href="#">Painting & Decorating</a></li>
+                      <li ><a href="#">Pets</a></li>
+                      <li ><a href="#">Drive thru range</a></li>
+                      <li ><a href="#">DIY Tools</a></li>
+                      <li ><a href="#">Car Cares</a></li>
+                      <li ><a href="#">Homeware & Furniture</a></li>
+                      <li ><a href="#">Car Care</a></li>
+                      <li ><a href="#">Painting & Decorating</a></li>
+                      <li ><a href="#">Pets</a></li>
+                      <li ><a href="#">Drive thru range</a></li>
+  
+  
+                  </ul>
+                 
+                  <div class="menu-category-image">
+                  <div class="mega-catimg" id="divss">
+                    <img src="assets/img/Ace-Web_53.png" alt="Manager" class="img-responsive"/>
+                    <hr>
+                    <button class="btn btn-success">Shop Now</button>
+                  </div>
+                  <div class="mega-catimg" id="divse">
+                    <img src="assets/img/Ace-Web_56.png" alt="HR" class="img-responsive"/>
+                    <hr>
+                    <button class="btn btn-success">Shop Now</button>
+  
+                  </div>
+                  </div>
+                 </div>
+  
+                 
+                 </div> -->
+  
+                 <!-- Content  -->
+  
+  
+            
+        </li>
+        <li>
+            <!-- <a href="#"> Contact</a> -->
+              
+                <!-- Content -->
+  
+                <!-- <div class="container-fluid">
+  
+                    Menu
+                
+               </div> -->
+  
+               <!-- Content  -->
+  
+  
+  
+        </li>
+       
      
+    </ul>
    
-  </ul>
- 
-</section>
+      
+  
+  </header>
     <!-- Megamenu -->
 
   
